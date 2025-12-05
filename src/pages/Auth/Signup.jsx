@@ -48,7 +48,7 @@ const Signup = () => {
             </span>
           </button>
         </div>
-        <div className="text-whtie font-medium text-center">
+        <div className="text-white font-medium text-center">
 
         By continuing, you agree to the FantasyBoss <br className="hidden lg:block"/> <Link className="text-[#FAAF16]" to="/terms-of-service">Terms of Service</Link> and acknowledge that you have read our <Link className="text-[#FAAF16]" to="/privacy-policy">Privacy Policy</Link>.
         </div>

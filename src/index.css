@@ -136,3 +136,69 @@ input[type="number"] {
 .auth-input:not(:placeholder-shown) {
   color: white;
 }
+
+/* Custom styles for AntD OTP input (uses classes from OTP component)
+   - Make each OTP box take equal full width across the container
+   - Remove all backgrounds and borders except yellow bottom border
+   - Center digits, increase size, and style focus/disabled states
+*/
+.otp-input-container {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+/* Target all input elements within OTP container */
+.otp-input-container input,
+.otp-input-field {
+  /* Let each input grow equally and fill the container */
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: white;
+  border: none !important;
+  border-bottom: 2px solid var(--color-yellow) !important;
+  padding: 12px 6px !important;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.otp-input-container input::placeholder,
+.otp-input-field::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.otp-input-container input:focus,
+.otp-input-field:focus {
+  border-bottom: 2px solid var(--color-yellow) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.otp-input-container input:disabled,
+.otp-input-field:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: transparent !important;
+}
+.otp-input-container .ant-otp-input-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+}
+.otp-input-container .ant-otp-input-wrapper .ant-input {
+  width: 25%;
+}
+
+/* When container is narrow, reduce gap a bit */
+@media (max-width: 480px) {
+  .otp-input-container { gap: 0.5rem; }
+  .otp-input-container input { font-size: 18px; padding: 10px 4px !important; }
+}
+
