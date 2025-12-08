@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 const Forgotpassword = () => {
+
   return (
      <div>
       <div className="flex items-center justify-between mb-12">
@@ -15,7 +16,6 @@ const Forgotpassword = () => {
         <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Email</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
           </div>
           <input type="email" className="auth-input" />
         </div>

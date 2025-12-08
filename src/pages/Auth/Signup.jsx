@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 const Signup = () => {
+  const [showPassword, setShowPassword] = useState(false)
+  const [showPasswordConfirm, setShowPasswordConfirm] = useState(false)
+
   return (
    <div>
       <div className="flex items-center justify-between mb-12">
@@ -15,30 +19,56 @@ const Signup = () => {
         <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Your email</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+     
           </div>
           <input type="email" className="auth-input" />
         </div>
         <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Cell #</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+     
           </div>
           <input type="number" className="auth-input" />
         </div>
        <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Password</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="cursor-pointer text-gray hover:text-yellow transition"
+            >
+              {showPassword ? (
+                <iconify-icon icon="jam:eye-close-f"></iconify-icon>
+              ) : (
+                <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+              )}
+            </button>
           </div>
-          <input type="password" className="auth-input" />
+          <input
+            type={showPassword ? "text" : "password"}
+            className="auth-input"
+          />
         </div>
        <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Re-enter password</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+            <button
+              type="button"
+              onClick={() => setShowPasswordConfirm(!showPasswordConfirm)}
+              className="cursor-pointer text-gray hover:text-yellow transition"
+            >
+              {showPasswordConfirm ? (
+                <iconify-icon icon="jam:eye-close-f"></iconify-icon>
+              ) : (
+                <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+              )}
+            </button>
           </div>
-          <input type="password" className="auth-input" />
+          <input
+            type={showPasswordConfirm ? "text" : "password"}
+            className="auth-input"
+          />
         </div>
         <div className="my-3">
           <button className="border-2 border-white rounded-xl flex items-center justify-between px-8 h-16 w-full md:text-xl text-white">

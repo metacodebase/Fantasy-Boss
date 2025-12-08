@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false)
+
   return (
     <div>
       <div className="flex items-center justify-between mb-12">
@@ -15,16 +18,28 @@ const Login = () => {
         <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Username or Email</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
           </div>
           <input type="email" className="auth-input" />
         </div>
         <div>
           <div className="flex items-center justify-between md:text-xl text-gray">
             <div className="font-medium">Password</div>
-          <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="cursor-pointer text-gray hover:text-yellow transition"
+            >
+              {showPassword ? (
+                <iconify-icon icon="jam:eye-close-f"></iconify-icon>
+              ) : (
+                <iconify-icon icon="mdi:eye-outline"></iconify-icon>
+              )}
+            </button>
           </div>
-          <input type="password" className="auth-input" />
+          <input
+            type={showPassword ? "text" : "password"}
+            className="auth-input"
+          />
         </div>
         <Link to="/auth/forgot-password" className="text-yellow">Forgot password?</Link>
         
