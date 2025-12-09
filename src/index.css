@@ -82,6 +82,9 @@ input[type="number"] {
 .yellow-button {
   /* Button Base Styles */
   padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #F9DB1B;
   border-radius: 50px; /* Fully rounded corners like in image */
   font-size: 18px;
@@ -102,6 +105,34 @@ input[type="number"] {
   background: transparent;
   border: 2px solid var(--color-yellow);
   color: var(--color-yellow);
+}
+.yellow-outline-button {
+  /* Button Base Styles */
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #F9DB1B;
+  border-radius: 50px; /* Fully rounded corners like in image */
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  /* Gradient Background (Normal State) */
+  color: #ffffff; /* Black text on yellow background */
+  outline: none;
+}
+/* Hover State */
+.yellow-outline-button:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(360deg, #FAAC15 0%, #F9DB1B 100%);
+  border: 2px solid var(--color-yellow);
+  color: #ffffff; /* Black text on yellow background */
+
 }
 /* auth input */
 .auth-input {
@@ -194,6 +225,21 @@ input[type="number"] {
 }
 .otp-input-container .ant-otp-input-wrapper .ant-input {
   width: 25%;
+}
+/* select */
+.ant-select.fantasy-header-select {
+  padding: 0px 0px 10px 0px;
+  color: var(--color-white);
+}
+.ant-select.fantasy-header-select .ant-select-suffix{
+  color: var(--color-white);
+
+}
+.ant-select.fantasy-header-select .ant-select-content-value{
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 600;
+
 }
 
 /* When container is narrow, reduce gap a bit */

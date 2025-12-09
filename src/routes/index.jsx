@@ -6,6 +6,7 @@ import Verification from '../pages/Auth/Verification'
 import SplashScreen from '../pages/Auth/SplashScreen'
 import DashboardLayout from '../Layouts/DashboardLayout'
 import Login from '../pages/Auth/Login'
+import Home from '../pages/Dashboard/Home'
 
 
 const AppRoutes = () => {
@@ -21,7 +22,7 @@ const AppRoutes = () => {
           <Route path="/auth/verification" element={<Verification />} />
         </Route>
         <Route element={<DashboardLayout />}>
-          <Route path="/dashboard" element={<DashboardLayout />} />
+          <Route path="/dashboard" element={<Home />} />
         </Route>
 
         {/* Default Route - Redirect to Login */}

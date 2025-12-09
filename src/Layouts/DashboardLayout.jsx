@@ -1,9 +1,14 @@
-import Home from "../pages/Dashboard/Home"
+import { Outlet } from "react-router-dom"
+import Header from "../components/Header"
+
 
 const DashboardLayout = () => {
   return (
     <div>
-      <Home />
+    <Header />
+    <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4">
+    <Outlet />
+    </div>
     </div>
   )
 }
