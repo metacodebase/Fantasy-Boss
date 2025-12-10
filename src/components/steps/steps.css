@@ -1,0 +1,590 @@
+/* Steps CSS - Additional Step-Specific Styling */
+
+/* Step 1: Create or Copy - Additional Styles */
+.step1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step1-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.step1-icon {
+  color: #F9D41B;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.step1-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step1-subtitle {
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Step 2: League Name - Additional Styles */
+.step2-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.step2-search {
+  margin-bottom: 24px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #1f2937;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #F9D41B;
+  box-shadow: 0 0 0 3px rgba(249, 212, 27, 0.1);
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Step 3: League Size - Additional Styles */
+.step3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step3-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.size-description {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.size-grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Step 4: League Type - Additional Styles */
+.step4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step4-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.type-options-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.redraft-card,
+.keeper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: transparent;
+  border: 2px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.redraft-card:hover,
+.keeper-card:hover {
+  border-color: #6b7280;
+}
+
+.redraft-card.active,
+.keeper-card.active {
+  background: rgba(249, 212, 27, 0.15);
+  border-color: #F9D41B;
+}
+
+.type-option-icon {
+  color: #F9D41B;
+  font-size: 48px;
+}
+
+.type-option-name {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.type-option-desc {
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Step 5: Draft Type - Additional Styles */
+.step5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step5-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.draft-options-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.draft-option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: transparent;
+  border: 2px solid #4b5563;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.draft-option-card:hover {
+  border-color: #6b7280;
+}
+
+.draft-option-card.active {
+  background: rgba(249, 212, 27, 0.15);
+  border-color: #F9D41B;
+}
+
+.draft-option-icon {
+  font-size: 40px;
+}
+
+.draft-option-card.active .draft-option-icon {
+  color: #F9D41B;
+}
+
+.draft-option-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.draft-option-desc {
+  color: #9ca3af;
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Step 6: Public/Private - Additional Styles */
+.step6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step6-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.access-options-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.access-option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: transparent;
+  border: 2px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.access-option-card:hover {
+  border-color: #6b7280;
+}
+
+.access-option-card.active {
+  background: rgba(249, 212, 27, 0.15);
+  border-color: #F9D41B;
+}
+
+.access-icon {
+  font-size: 48px;
+  color: #F9D41B;
+}
+
+.access-option-name {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.access-option-desc {
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Step 7: Collect Fees - Additional Styles */
+.step7-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step7-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.fees-options-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fees-option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: transparent;
+  border: 2px solid #4b5563;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.fees-option-card:hover {
+  border-color: #6b7280;
+}
+
+.fees-option-card.active {
+  background: rgba(249, 212, 27, 0.15);
+  border-color: #F9D41B;
+}
+
+.fees-icon {
+  font-size: 48px;
+  color: #F9D41B;
+}
+
+.fees-option-name {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.fees-option-desc {
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Step 8: League Ready - Additional Styles */
+.step8-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step8-header {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.success-icon {
+  color: #10b981;
+  font-size: 96px;
+  margin-bottom: 16px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.success-description {
+  color: #d1d5db;
+  margin: 0 0 24px 0;
+  line-height: 1.6;
+}
+
+.league-summary-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 24px;
+}
+
+.summary-grid {
+  background: rgba(249, 212, 27, 0.05);
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #4b5563;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary-value {
+  color: #F9D41B;
+  font-weight: 700;
+}
+
+.ready-actions {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ready-primary-btn,
+.ready-secondary-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.ready-primary-btn {
+  background: linear-gradient(360deg, #FAAC15 0%, #F9DB1B 100%);
+  color: #000000;
+}
+
+.ready-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(249, 212, 27, 0.3);
+}
+
+.ready-secondary-btn {
+  background: transparent;
+  border: 1px solid #4b5563;
+  color: #e5e7eb;
+}
+
+.ready-secondary-btn:hover {
+  border-color: #6b7280;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  .step1-title,
+  .step4-header .setting-title,
+  .step5-header .setting-title,
+  .step6-header .setting-title,
+  .step7-header .setting-title,
+  .success-title {
+    font-size: 20px;
+  }
+
+  .step1-icon,
+  .step3-header .setting-icon,
+  .step4-header .setting-icon,
+  .step5-header .setting-icon,
+  .step6-header .setting-icon,
+  .step7-header .setting-icon,
+  .success-icon {
+    font-size: 48px;
+  }
+
+  .type-options-wrapper,
+  .draft-options-wrapper,
+  .access-options-wrapper,
+  .fees-options-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .redraft-card,
+  .keeper-card,
+  .draft-option-card,
+  .access-option-card,
+  .fees-option-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .size-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .league-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .league-desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .step1-title,
+  .step4-header .setting-title,
+  .step5-header .setting-title,
+  .step6-header .setting-title,
+  .step7-header .setting-title,
+  .success-title {
+    font-size: 18px;
+  }
+
+  .step1-icon,
+  .step3-header .setting-icon,
+  .step4-header .setting-icon,
+  .step5-header .setting-icon,
+  .step6-header .setting-icon,
+  .step7-header .setting-icon {
+    font-size: 40px;
+  }
+
+  .success-icon {
+    font-size: 56px;
+  }
+
+  .size-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .size-button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .type-option-icon,
+  .draft-option-icon,
+  .access-icon,
+  .fees-icon {
+    font-size: 32px;
+  }
+
+  .summary-grid {
+    padding: 12px;
+  }
+
+  .summary-row {
+    padding: 6px 0;
+    font-size: 12px;
+  }
+}

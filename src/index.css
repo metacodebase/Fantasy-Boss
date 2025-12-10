@@ -28,16 +28,13 @@ body {
   color: var(--color-white);
   font-family: var(--font-sans) !important;
   overflow-x: hidden;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 /* Remove default styles */
 button {
   font-family: inherit;
-  cursor: pointer;
-
- 
+  cursor: pointer; 
 }
 
 ul, ol {
@@ -63,6 +60,51 @@ input[type="number"] {
 /* Optional: Make it look fully custom */
 input[type="number"] {
   appearance: textfield;
+}
+.ant-btn,
+.ant-input,
+.ant-select,
+.ant-modal,
+.ant-modal-content,
+.ant-modal-header,
+.ant-modal-body,
+.ant-modal-footer,
+.ant-table,
+.ant-menu,
+.ant-dropdown,
+.ant-tooltip,
+.ant-popover,
+.ant-notification,
+.ant-message,
+.ant-form,
+.ant-radio,
+.ant-checkbox,
+.ant-switch,
+.ant-picker,
+.ant-tabs,
+.ant-card,
+.ant-collapse,
+.ant-pagination,
+.ant-typography,
+.ant-space,
+.ant-divider,
+.ant-tag,
+.ant-badge,
+.ant-avatar,
+.ant-breadcrumb,
+.ant-steps,
+.ant-progress,
+.ant-spin,
+.ant-alert,
+.ant-drawer,
+.ant-upload {
+  font-family: var(--font-sans) !important;
+  font-size: 16px !important;
+}
+
+/* If the above doesn't work, use this more aggressive approach */
+[class*="ant-"] {
+  font-family: var(--font-sans) !important;
 }
 /* auth */
 .auth-background {

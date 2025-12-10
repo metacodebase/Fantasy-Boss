@@ -1,8 +1,12 @@
 
 import { Row, Col, } from "antd"
+import { useState } from "react"
+import LeagueCreationModal from "../../components/LeagueCreationModal"
+import SwiperBoss from "../../components/SwiperBoss"
 
 
 const Home = () => {
+  const [isLeagueModalOpen, setIsLeagueModalOpen] = useState(false)
   // Mock data for current leagues
   const currentLeagues = [
     {
@@ -54,7 +58,9 @@ const Home = () => {
           {/* Create or Join League Card */}
               <div className="bg-lightgray rounded-[18px]  p-5 mt-4">
                 <div className="flex flex-col lg:flex-row items-center gap-4">
-                   <button className="yellow-button w-full h-[52px]">
+                   <button 
+                     onClick={() => setIsLeagueModalOpen(true)}
+                     className="yellow-button w-full h-[52px]">
               
             Create or join a league
               </button>
@@ -75,7 +81,9 @@ const Home = () => {
                 <p className="text-gray text-sm">Draft with friends, office rivals, or join a public competition</p>
               </div>
             </div>
-            <button className="yellow-button h-8">
+            <button 
+              onClick={() => setIsLeagueModalOpen(true)}
+              className="yellow-button h-8">
              Create
             </button>
            </div>
@@ -176,6 +184,25 @@ const Home = () => {
           </div>
         </Col>
       </Row>
+        <Row  gutter={[
+              { xs: 16, sm: 32, md: 22 },
+              { xs: 16, sm: 32, md: 22 },
+            ]} className="justify-center">
+              <Col xs={24} lg={16}>
+              
+      <SwiperBoss />
+              
+              </Col>
+
+
+            </Row>
+
+
+      {/* League Creation Modal */}
+      <LeagueCreationModal 
+        isOpen={isLeagueModalOpen} 
+        onClose={() => setIsLeagueModalOpen(false)} 
+      />
     </div>
   )
 }
