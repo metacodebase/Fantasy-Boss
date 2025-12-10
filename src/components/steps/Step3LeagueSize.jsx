@@ -10,20 +10,21 @@ const Step3LeagueSize = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
   return (
     <div className="step-container">
-      <div className="step-header">
+     <div className="step-header">
         <button onClick={onBack} className="btn-back">
           <iconify-icon icon="mdi:chevron-left"></iconify-icon>
         </button>
-        <h2 className="step-title">League Settings</h2>
+        <h4 className="text-2xl font-bold text-white">League Settings</h4>
+    <div className="placeholder"></div>
       </div>
 
       <div className="step-content">
-        <div className="setting-header">
-          <h3 className="setting-title">League Size</h3>
-          <div className="setting-icon">
-            <iconify-icon icon="mdi:ruler" width="64" height="64"></iconify-icon>
+        <div className="">
+         <h3 className="text-white text-[32px] font-bold text-center">League Size</h3>
+          <div className="flex justify-center my-6">
+           <img src="/assets/images/league-size.png" className="w-44" alt="league-size" />
           </div>
-          <p className="setting-subtitle">We&apos;d say size doesn&apos;t matter, but we&apos;d be lying.</p>
+          <p className="text-white text-[20px] mb-5 text-center">We&apos;d say size doesn&apos;t matter, but we&apos;d be lying.</p>
         </div>
 
         <div className="size-grid">
@@ -37,13 +38,13 @@ const Step3LeagueSize = ({ leagueData, updateLeagueData, onNext, onBack }) => {
             </button>
           ))}
         </div>
-      </div>
-
-      <div className="step-footer">
-        <button onClick={onBack} className="btn-secondary">
+      <div className="flex justify-center mt-4">
+        <button onClick={onBack} className="bg-transparent border-0 text-yellow">
           Back
         </button>
       </div>
+      </div>
+
     </div>
   )
 }

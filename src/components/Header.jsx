@@ -63,7 +63,7 @@ const Header = () => {
             </div>
         </div>
         <div>
-            <img src="/public/assets/images/dashboard-logo.png" className="h-auto w-auto" alt="dashboard-logo" />
+            <img src="/assets/images/dashboard-logo.png" className="h-auto w-auto" alt="dashboard-logo" />
         </div>
         <div className="flex items-center gap-2">
             <button className="w-9 h-9 rounded-md text-white bg-[#394962] text-xl flex items-center justify-center">
@@ -75,7 +75,7 @@ const Header = () => {
             {/* add the divider  */}
             <div className="w-px h-7 bg-[#707070]"></div>
             <div>
-                <img src="/public/assets/images/demo.png" className="h-11 w-11 rounded-full" alt="dummy-pic" />
+                <img src="/assets/images/demo.png" className="h-11 w-11 rounded-full" alt="dummy-pic" />
             </div>
             <button className="h-9 bg-[#3E3E3E] text-white uppercase flex items-center justify-center rounded-3xl p-3 text-sm">
                 log out

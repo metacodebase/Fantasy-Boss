@@ -8,48 +8,52 @@ const Step7CollectFees = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
   return (
     <div className="step-container">
-      <div className="step-header">
+    <div className="step-header">
         <button onClick={onBack} className="btn-back">
           <iconify-icon icon="mdi:chevron-left"></iconify-icon>
         </button>
-        <h2 className="step-title">League Settings</h2>
+        <h4 className="text-2xl font-bold text-white">League Settings</h4>
+    <div className="placeholder"></div>
       </div>
 
       <div className="step-content">
-        <div className="setting-header">
-          <h3 className="setting-title">Use FantasyBoss to collect League fees?</h3>
-          <div className="setting-icon">
-            <iconify-icon icon="mdi:cash-multiple" width="64" height="64"></iconify-icon>
+   
+          <div className="">
+         <h3 className="text-white text-[32px] font-bold text-center">Use FantasyBoss to collect League fees?</h3>
+          <div className="flex justify-center my-6">
+           <img src="/assets/images/collect.png" className="w-64" alt="collect fees" />
           </div>
-          <p className="setting-subtitle">
-            We're way more trustworthy than your cousin Vinny. And we break less cookies.
-          </p>
+          <p className="text-white text-[20px] mb-5 text-center">We're way more trustworthy than your cousin Vinny. And we break less cookies.</p>
         </div>
 
-        <div className="fees-options">
+        <div className="options-flex">
           {/* Yes Option */}
           <button
             onClick={() => handleSelectFees(true)}
-            className={`fees-option ${leagueData.collectFees === true ? "active" : ""}`}
+            className={`type-option extra-type-opition ${leagueData.collectFees === true ? "active" : ""}`}
           >
-            <span>YES</span>
+            <img src="/assets/images/dollar.png" className="w-20" alt="dollar" />
+            <button className="yellow-button h-[32px] w-[140px] mt-4">YES</button>
           </button>
 
           {/* No Option */}
           <button
             onClick={() => handleSelectFees(false)}
-            className={`fees-option ${leagueData.collectFees === false ? "active" : ""}`}
+            className={`type-option extra-type-opition ${leagueData.collectFees === false ? "active" : ""}`}
           >
-            <span>NO</span>
+            <img src="/assets/images/box.png" className="w-20" alt="box" />
+
+            <button className="yellow-outline-button h-[32px] w-[140px] mt-4">NO</button>
           </button>
         </div>
-      </div>
-
-      <div className="step-footer">
-        <button onClick={onBack} className="btn-secondary">
+            <div className="flex justify-center mt-4">
+        <button onClick={onBack} className="bg-transparent border-0 text-yellow">
           Back
         </button>
       </div>
+      </div>
+
+     
     </div>
   )
 }

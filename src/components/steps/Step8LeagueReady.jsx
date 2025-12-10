@@ -3,52 +3,52 @@ import "./steps.css"
 const Step8LeagueReady = ({ leagueData, onFinish, onBack }) => {
   return (
     <div className="step-container">
-      <div className="step-header">
+        <div className="step-header">
         <button onClick={onBack} className="btn-back">
           <iconify-icon icon="mdi:chevron-left"></iconify-icon>
         </button>
-        <h2 className="step-title">League Settings</h2>
+        <h4 className="text-2xl font-bold text-white">League Settings</h4>
+    <div className="placeholder"></div>
       </div>
 
       <div className="step-content">
-        <div className="ready-container">
-          <div className="ready-icon">
-            <iconify-icon icon="mdi:check-circle" width="96" height="96"></iconify-icon>
+        <div className="">
+      <div className="">
+         <h3 className="text-white text-[32px] font-bold text-center">Your League is ready!</h3>
+          <div className="flex justify-center my-6">
+           <img src="/assets/images/ready.png" className="w-64" alt="ready" />
           </div>
-          <h3 className="ready-title">Your League is ready!</h3>
-          <p className="ready-description">
-            Bravo! You've proven that even the most mundane tasks can be conquered with enough determination. 
-            Now get out there and build a team! Or not, friends can win, nope are forever.
-          </p>
+          <p className="text-white text-[20px] mb-5 text-center">Bravo! You’ve proven that even the most mundane tasks can be conquered with enough determination. Now get out there and build a team! Or not. Friends can wait, naps are forever.</p>
+        </div>
 
-          <div className="league-summary">
-            <div className="summary-item">
+          <div className="flex flex-col gap-2 mb-6 items-center text-xl font-bold text-white">
+            <div className="flex items-center gap-2">
               <span className="label">Size:</span>
               <span className="value">{leagueData.leagueSize}</span>
             </div>
-            <div className="summary-item">
+            <div className="flex items-center gap-2">
               <span className="label">Type:</span>
               <span className="value">{leagueData.leagueType?.toUpperCase()}</span>
             </div>
-            <div className="summary-item">
+            <div className="flex items-center gap-2">
               <span className="label">Draft:</span>
               <span className="value">{leagueData.draftType?.toUpperCase()}</span>
             </div>
-            <div className="summary-item">
-              <span className="label">Access:</span>
+            <div className="flex items-center gap-2">
+             
               <span className="value">{leagueData.isPublic ? "PUBLIC" : "PRIVATE"}</span>
             </div>
-            <div className="summary-item">
+            <div className="flex items-center gap-2">
               <span className="label">Collect Fees:</span>
-              <span className="value">{leagueData.collectFees ? "Yes" : "No"}</span>
+              <span className="value">{leagueData.collectFees ? "True" : "False"}</span>
             </div>
           </div>
 
-          <div className="ready-buttons">
-            <button onClick={() => {}} className="btn-secondary">
-              CONTINUE SETUP
+          <div className="flex flex-col gap-4 justify-center">
+            <button onClick={() => {}} className="yellow-outline-button h-[52px]">
+              CONTINUE SET UP
             </button>
-            <button onClick={onFinish} className="btn-primary">
+            <button onClick={onFinish} className="yellow-button h-[52px]">
               I'M DONE FOR NOW
             </button>
           </div>

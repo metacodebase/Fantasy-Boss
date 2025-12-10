@@ -406,21 +406,7 @@
   line-height: 1.6;
 }
 
-.league-summary-wrapper {
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 24px;
-}
 
-.summary-grid {
-  background: rgba(249, 212, 27, 0.05);
-  border: 1px solid #4b5563;
-  border-radius: 8px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
 
 .summary-row {
   display: flex;

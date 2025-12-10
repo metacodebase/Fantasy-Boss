@@ -8,20 +8,23 @@ const Step4LeagueType = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
   return (
     <div className="step-container">
-      <div className="step-header">
+       <div className="step-header">
         <button onClick={onBack} className="btn-back">
           <iconify-icon icon="mdi:chevron-left"></iconify-icon>
         </button>
-        <h2 className="step-title">League Settings</h2>
+        <h4 className="text-2xl font-bold text-white">League Settings</h4>
+    <div className="placeholder"></div>
       </div>
 
       <div className="step-content">
-        <div className="setting-header">
-          <h3 className="setting-title">League Type</h3>
-          <div className="setting-icon">
-            <iconify-icon icon="mdi:trophy-outline" width="64" height="64"></iconify-icon>
+       <div className="">
+         <h3 className="text-white text-[32px] font-bold text-center">League Type</h3>
+          <div className="flex justify-center my-6">
+           <img src="/assets/images/league-type.png" className="w-44" alt="league-type" />
           </div>
-          <p className="setting-subtitle">What&apos;s your league type? No judgement.</p>
+          <p className="text-white text-[20px] mb-5 text-center">What&apos;s your league type? No judgement.
+             At least not where you can hear us.
+          </p>
         </div>
 
         <div className="options-flex">
@@ -31,7 +34,7 @@ const Step4LeagueType = ({ leagueData, updateLeagueData, onNext, onBack }) => {
             className={`type-option ${leagueData.leagueType === "redraft" ? "active" : ""}`}
           >
             <div className="type-icon">
-              <iconify-icon icon="mdi:refresh" width="48" height="48"></iconify-icon>
+             <iconify-icon icon="oi:reload"></iconify-icon>
             </div>
             <span>REDRAFT</span>
           </button>
@@ -42,18 +45,19 @@ const Step4LeagueType = ({ leagueData, updateLeagueData, onNext, onBack }) => {
             className={`type-option ${leagueData.leagueType === "keeper" ? "active" : ""}`}
           >
             <div className="type-icon">
-              <iconify-icon icon="game-icons:american-football-ball" width="48" height="48"></iconify-icon>
+          <iconify-icon icon="game-icons:american-football-helmet"></iconify-icon>
             </div>
             <span>KEEPER</span>
           </button>
         </div>
-      </div>
-
-      <div className="step-footer">
-        <button onClick={onBack} className="btn-secondary">
+           <div className="flex justify-center mt-4">
+        <button onClick={onBack} className="bg-transparent border-0 text-yellow">
           Back
         </button>
       </div>
+      </div>
+
+     
     </div>
   )
 }

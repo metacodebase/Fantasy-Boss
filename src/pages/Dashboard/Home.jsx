@@ -13,31 +13,31 @@ const Home = () => {
       id: 1,
       name: "Toms Game",
       description: "Draft strategy to beat Ton...",
-      icon: "⚽",
+   
     },
     {
       id: 2,
       name: "Roms Stuff",
       description: "Roms does things with ppl...",
-      icon: "🏈",
+
     },
     {
       id: 3,
       name: "Tiger Balm",
       description: "Eye of the tiger baby",
-      icon: "🐯",
+  
     },
     {
       id: 4,
       name: "Tiger Balm",
       description: "Eye of the tiger baby",
-      icon: "🐯",
+
     },
     {
       id: 5,
       name: "Tiger Balm",
       description: "Eye of the tiger baby",
-      icon: "🐯",
+
     },
   ]
 
