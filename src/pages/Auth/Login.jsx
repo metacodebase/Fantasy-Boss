@@ -6,12 +6,8 @@ const Login = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-12">
-        <button className="text-xl">
-          <iconify-icon icon="maki:cross" />
-          </button>
+      <div className="flex items-center justify-center mb-12">
         <h6 className="font-bold text-2xl">Login</h6>
-        <div></div>
       </div>
 
       <form className="flex flex-col gap-6" >

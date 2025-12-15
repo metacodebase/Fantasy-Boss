@@ -1,0 +1,22 @@
+.ant-modal.join-league-modal .ant-modal-container {
+    background: linear-gradient(to bottom, #191818, #2E2E2E);
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 30px;
+}
+.join-league-modal .ant-modal-close {
+  color: #fff;
+  top: 16px;
+  right: 16px;
+  
+}
+.join-league-modal .ant-modal-close:hover {
+  color: #F9D41B;
+}
+
+
+
+
+
+

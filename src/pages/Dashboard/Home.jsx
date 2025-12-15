@@ -1,11 +1,13 @@
 
 import { Row, Col, } from "antd"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import LeagueCreationModal from "../../components/LeagueCreationModal"
 import SwiperBoss from "../../components/SwiperBoss"
 
 
 const Home = () => {
+  const navigate = useNavigate()
   const [isLeagueModalOpen, setIsLeagueModalOpen] = useState(false)
   // Mock data for current leagues
   const currentLeagues = [
@@ -64,7 +66,9 @@ const Home = () => {
               
             Create or join a league
               </button>
-              <button className="yellow-outline-button w-full h-[52px]">
+              <button 
+                onClick={() => navigate("/find-league")}
+                className="yellow-outline-button w-full h-[52px]">
                View all leagues
               </button>
                 </div>

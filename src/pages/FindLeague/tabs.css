@@ -1,0 +1,321 @@
+/* Tabs and Leagues Styling */
+
+.tabs-wrapper {
+  width: 100%;
+}
+/* AntD Tabs Override */
+.leagues-tabs {
+  width: 100%;
+}
+.ant-tabs.leagues-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #ffffff;
+}
+.ant-tabs.leagues-tabs .ant-tabs-ink-bar {
+    background-color: #ffffff;
+}
+
+.leagues-tabs .ant-tabs-nav {
+  background: transparent;
+  border-bottom: none;
+  margin: 0;
+}
+
+.leagues-tabs .ant-tabs-nav::before {
+  display: none;
+}
+
+.leagues-tabs .ant-tabs-nav-list {
+  gap: 0;
+  display: flex;
+}
+
+.leagues-tabs .ant-tabs-tab {
+  padding: 12px 24px;
+  margin: 0;
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  background: transparent;
+  position: relative;
+}
+
+.leagues-tabs .ant-tabs-tab:hover {
+  color: #ffffff;
+}
+
+.leagues-tabs .ant-tabs-tab-active {
+  color: #ffffff;
+}
+
+.leagues-tabs .ant-tabs-tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ffffff;
+}
+
+.leagues-tabs .ant-tabs-content {
+  background: transparent;
+}
+
+/* Tab Count Text */
+.tab-count {
+  color: #F9D41B;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+
+
+/* League Card */
+.league-card {
+  background:#212121 ;
+  border: 1px solid #707070;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.league-card:hover {
+  border-color: #F9D41B;
+  box-shadow: 0 8px 24px rgba(249, 212, 27, 0.15);
+  transform: translateY(-4px);
+}
+
+.league-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+
+
+.league-card-info {
+  flex: 1;
+}
+
+.league-card-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.league-card-description {
+  color: #FBFBFB;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.league-card-badge {
+  position: absolute;
+  top: -20px;
+  width: 50px;
+  height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  right: 0;
+  background: #FAAF16;
+  color: #000000;
+  padding: 4px 12px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* League Card Button */
+.league-card-button {
+  width: 100%;
+  padding: 12px 16px;
+  height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 99px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.league-card-button:hover {
+  border-color: #F9D41B;
+  color: #F9D41B;
+}
+
+.league-card:hover .league-card-button {
+  border-color: #F9D41B;
+  color: #F9D41B;
+}
+
+/* Sort Button */
+.sort-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.sort-button:hover {
+  border-color: #F9D41B;
+  color: #F9D41B;
+}
+
+.sort-button iconify-icon {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tabs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sort-button {
+    width: 100%;
+  }
+
+  .leagues-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leagues-tabs .ant-tabs-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .leagues-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+
+  .league-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .league-card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .league-card-title {
+    font-size: 14px;
+  }
+
+  .league-card-description {
+    font-size: 12px;
+  }
+
+  .league-card-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .sort-button {
+    width: 100%;
+  }
+
+  .tab-count {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leagues-tabs .ant-tabs-tab {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .leagues-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .league-card {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .league-card-header {
+    gap: 10px;
+  }
+
+  .league-card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .league-card-title {
+    font-size: 13px;
+  }
+
+  .league-card-description {
+    font-size: 11px;
+  }
+
+  .league-card-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    top: -6px;
+  }
+
+  .league-card-button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .sort-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .tab-count {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+}

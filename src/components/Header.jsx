@@ -82,7 +82,7 @@ const Header = () => {
             </button>
         </div>
       </div>
-      <div className="bg-lightgray rounded-[18px] border border-[#707070] p-5 mt-4">
+      <div className="bg-lightgray rounded-[18px] border border-secondgray p-5 mt-4">
         {/* Desktop Navbar */}
         <nav className="hidden lg:flex items-center justify-center gap-6 text-center">
           {navigationItems.map((item) => (

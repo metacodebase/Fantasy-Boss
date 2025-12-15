@@ -7,6 +7,7 @@ import SplashScreen from '../pages/Auth/SplashScreen'
 import DashboardLayout from '../Layouts/DashboardLayout'
 import Login from '../pages/Auth/Login'
 import Home from '../pages/Dashboard/Home'
+import FindLeague from '../pages/FindLeague'
 
 
 const AppRoutes = () => {
@@ -23,6 +24,10 @@ const AppRoutes = () => {
         </Route>
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Home />} />
+        </Route>
+
+        <Route>
+          <Route path="/find-league" element={<FindLeague />} />
         </Route>
 
         {/* Default Route - Redirect to Login */}
