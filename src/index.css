@@ -227,11 +227,14 @@ input[type="number"] {
   color: white;
 }
 
-/* Custom styles for AntD OTP input (uses classes from OTP component)
-   - Make each OTP box take equal full width across the container
-   - Remove all backgrounds and borders except yellow bottom border
-   - Center digits, increase size, and style focus/disabled states
-*/
+/* setting modal */
+.ant-modal.settings-modal .ant-modal-container {
+    background: linear-gradient(to bottom, #191818, #2E2E2E);
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 30px;
+}
 .otp-input-container {
   display: flex;
   gap: 0.75rem;
@@ -301,15 +304,115 @@ input[type="number"] {
 
 }
 
+/* swiper team */
+.matchups-swiper {
+ padding-bottom: 30px;
+            }
+.matchups-swiper .swiper-pagination {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.matchups-swiper .swiper-pagination-bullet {
+  width: 30px !important;
+  height: 5px;
+  background-color: #707070;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* opacity: 0.7; */
+}
+
+.matchups-swiper .swiper-pagination-bullet-active {
+  background-color: #ffc107;
+  opacity: 1;
+}
+
+
+
+
 /* When container is narrow, reduce gap a bit */
+
+/* Standings Table Styling */
+.standings-table .ant-table {
+  background: transparent !important;
+}
+.ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  background-color: transparent !important;
+}
+.standings-table .ant-table-thead > tr > th {
+  background: transparent !important;
+  border-bottom: 1px solid #404040 !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 8px !important;
+  text-transform: uppercase;
+}
+
+.standings-table .ant-table-tbody > tr {
+  border: 1px solid #404040 !important;
+  border-radius: 12px;
+  margin-bottom: 12px !important;
+}
+
+.standings-table .ant-table-tbody > tr > td {
+  background: transparent !important;
+  border-bottom: 1px solid #404040 !important;
+  padding: 14px 8px !important;
+  color: #FFFFFF !important;
+}
+
+.standings-table .ant-table-tbody > tr:hover > td {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.standings-table .ant-table-wrapper {
+  font-size: 14px;
+}
+.ant-select.ant-select-outlined.week-select {
+  background: linear-gradient(to bottom, #212121, #333333, #484848) !important;
+  border-radius: 50px !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  padding: 8px 12px !important;
+}
+.ant-select.week-select .ant-select-suffix {
+  color: #FFFFFF !important;
+  font-size: 20px;
+}
+.ant-select.week-select .ant-select-open .ant-select-content-value {
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .matchups-swiper {
+    padding-bottom: 25px;
+  }
+
+  .matchups-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+    .standings-table .ant-table-thead > tr > th {
+    font-size: 11px;
+    padding: 10px 6px !important;
+  }
+
+  .standings-table .ant-table-tbody > tr > td {
+    padding: 12px 6px !important;
+    font-size: 12px;
+  }
+  .yellow-button {
+    font-size: 16px;
+    padding: 14px 28px;
+ }
+}
+
 @media (max-width: 480px) {
   .otp-input-container { gap: 0.5rem; }
   .otp-input-container input { font-size: 18px; padding: 10px 4px !important; }
 }
 
-@media (max-width: 767px) {
- .yellow-button {
-    font-size: 16px;
-    padding: 14px 28px;
- }
-}

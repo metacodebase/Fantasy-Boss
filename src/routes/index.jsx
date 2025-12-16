@@ -8,6 +8,8 @@ import DashboardLayout from '../Layouts/DashboardLayout'
 import Login from '../pages/Auth/Login'
 import Home from '../pages/Dashboard/Home'
 import FindLeague from '../pages/FindLeague'
+import League from '../pages/Dashboard/League'
+import Matchup from '../pages/Dashboard/Matchup'
 
 
 const AppRoutes = () => {
@@ -24,6 +26,8 @@ const AppRoutes = () => {
         </Route>
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Home />} />
+          <Route path="/league" element={<League />} />
+          <Route path="/matchups" element={<Matchup />} />
         </Route>
 
         <Route>
