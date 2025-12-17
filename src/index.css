@@ -338,8 +338,23 @@ input[type="number"] {
 .standings-table .ant-table {
   background: transparent !important;
 }
+.standings-table .ant-table table {
+  border-collapse: separate;
+  border-spacing: 0 20px; /* 0 horizontal, 12px vertical spacing */
+}
 .ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
   background-color: transparent !important;
+}
+.standings-table .ant-table-tbody > tr > td:first-child {
+  border-left: 1px solid #404040; /* Add left border */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.standings-table .ant-table-tbody > tr > td:last-child {
+  border-right: 1px solid #404040; /* Add right border */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .standings-table .ant-table-thead > tr > th {
   background: transparent !important;
@@ -360,6 +375,7 @@ input[type="number"] {
 .standings-table .ant-table-tbody > tr > td {
   background: transparent !important;
   border-bottom: 1px solid #404040 !important;
+  border-top: 1px solid #404040 !important;
   padding: 14px 8px !important;
   color: #FFFFFF !important;
 }

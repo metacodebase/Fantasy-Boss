@@ -1,9 +1,11 @@
-import { Col, Row, Table, Modal } from "antd";
+import { Col, Row, Modal } from "antd";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
+import StandingsTable from "../../components/StandingsTable";
+import TransactionsList from "../../components/TransactionsList";
 
 const League = () => {
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
@@ -313,7 +315,6 @@ const League = () => {
           {/* Left Column - Standings Table */}
           <Col xs={24} lg={12}>
             <div className="bg-linear-to-b border border-secondgray from-[#191818] to-[#2E2E2E] rounded-[18px] p-5 standings-container">
-             
               <StandingsTable />
             </div>
           </Col>
@@ -347,7 +348,7 @@ const League = () => {
                  <button onClick={() => setSettingsModalOpen(false)} className=" text-white w-6 text-2xl">
                    <iconify-icon icon="gridicons:cross"></iconify-icon>
                  </button>
-                        <h2 className="text-center font-bold text-2xl">Join a League</h2>
+                        <h2 className="text-center font-bold text-2xl">Settings</h2>
             <div className="w-6"></div>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-6">
@@ -394,244 +395,6 @@ const League = () => {
           </div>
         </div>
       </Modal>
-    </div>
-  );
-};
-
-// Standings Table Component
-const StandingsTable = () => {
-  const standingsData = [
-    {
-      key: "1",
-      rank: 1,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "2",
-      rank: 2,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "3",
-      rank: 3,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "4",
-      rank: 4,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "5",
-      rank: 5,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "6",
-      rank: 6,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "7",
-      rank: 7,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "8",
-      rank: 8,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "9",
-      rank: 9,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-    {
-      key: "10",
-      rank: 10,
-      team: "Toms Game",
-      subtitle: "1 - 0 Waiver Priority 1",
-      for: "166.23",
-      against: "166.23",
-    },
-  ];
-
-  const columns = [
-    {
-      title: "",
-      dataIndex: "rank",
-      key: "rank",
-      width: "60px",
-      render: (text) => {
-        let rankColor = "#AFAFAF";
-        if (text === 1) rankColor = "#22C55E";
-        else if (text === 2) rankColor = "#F59E0B";
-        else if (text >= 5) rankColor = "#F97316";
-
-        return (
-          <div className="flex items-center justify-center">
-            <span
-              className="text-3xl font-bold"
-              style={{
-                color: rankColor,
-              }}
-            >
-              {text}
-            </span>
-          </div>
-        );
-      },
-    },
-    {
-      title: "Standings",
-      dataIndex: "team",
-      key: "team",
-      render: (text, record) => (
-        <div>
-          <div className="text-white font-bold text-[16px] flex items-center gap-2">
-            {text}
-       <span className="text-[#1DF92B]">  <iconify-icon icon="icon-park-solid:up-one"></iconify-icon></span>
-          </div>
-          <div className="text-gray text-xs md:text-sm">{record.subtitle}</div>
-        </div>
-      ),
-    },
-    {
-      title: "For",
-      dataIndex: "for",
-      key: "for",
-      width: "100px",
-      render: (text) => (
-        <span className="text-gray font-medium text-sm md:text-base">
-          {text}
-        </span>
-      ),
-    },
-    {
-      title: "Against",
-      dataIndex: "against",
-      key: "against",
-      width: "120px",
-      render: (text) => (
-        <span className="text-gray font-medium text-sm md:text-base">
-          {text}
-        </span>
-      ),
-    },
-  ];
-
-  return (
-    <Table
-      columns={columns}
-      dataSource={standingsData}
-      pagination={false}
-      className="standings-table"
-    />
-  );
-};
-
-// Transactions Component
-const TransactionsList = () => {
-  const transactions = [
-    { id: 1, type: "add", name: "Patrick Mahmos", team: "Tom's Team" },
-    { id: 2, type: "remove", name: "Patrick Mahmos", team: "Sep 28, 3:04 am" },
-    { id: 3, type: "add", name: "Patrick Mahmos", team: "Tom's Team" },
-    { id: 4, type: "remove", name: "Patrick Mahmos", team: "Sep 28, 3:04 am" },
-    { id: 5, type: "add", name: "Patrick Mahmos", team: "Tom's Team" },
-    { id: 6, type: "remove", name: "Patrick Mahmos", team: "Sep 28, 3:04 am" },
-    { id: 7, type: "add", name: "Patrick Mahmos", team: "Tom's Team" },
-    { id: 8, type: "remove", name: "Patrick Mahmos", team: "Sep 28, 3:04 am" },
-    { id: 9, type: "add", name: "Patrick Mahmos", team: "Tom's Team" },
-    { id: 10, type: "remove", name: "Patrick Mahmos", team: "Sep 28, 3:04 am" },
-  ];
-
-  // Group transactions into pairs
-  const groupedTransactions = [];
-  for (let i = 0; i < transactions.length; i += 2) {
-    groupedTransactions.push(transactions.slice(i, i + 2));
-  }
-
-  return (
-    <div className="flex flex-col gap-4">
-      {groupedTransactions.map((group, groupIndex) => (
-        <div
-          key={groupIndex}
-          className="border border-secondgray rounded-[18px] p-4 "
-        >
-          <div className="flex flex-col gap-3 md:gap-4">
-            {group.map((transaction) => (
-              <div
-                key={transaction.id}
-                className="flex items-center justify-between"
-              >
-                <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
-                  <div
-                    className={`w-8 h-8 md:w-10 md:h-10 text-lg flex items-center justify-center shrink-0 ${
-                      transaction.type === "add"
-                        ? "text-[#1DF92B]"
-                        : " text-[#FF0000]"
-                    }`}
-                  >
-                    <iconify-icon
-                      icon={
-                        transaction.type === "add"
-                          ? "fa-solid:plus"
-                          : "rivet-icons:minus"
-                      }
-                  
-                    ></iconify-icon>
-                  </div>
-                        <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-3xl">
-                      <iconify-icon
-                        icon="mdi:account"
-                        className=""
-                      ></iconify-icon>
-                    </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-white font-bold text-sm md:text-base">
-                      {transaction.name}
-                    </div>
-                  </div>
-                </div>
-                <div className={`whitespace-nowrap ml-2 md:ml-4 ${
-                  transaction.type === "add" 
-                    ? "text-white font-medium text-base" 
-                    : "text-gray font-medium text-sm"
-                }`}>
-                  {transaction.team}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
     </div>
   );
 };

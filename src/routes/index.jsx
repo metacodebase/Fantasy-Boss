@@ -10,6 +10,10 @@ import Home from '../pages/Dashboard/Home'
 import FindLeague from '../pages/FindLeague'
 import League from '../pages/Dashboard/League'
 import Matchup from '../pages/Dashboard/Matchup'
+import LeagueCommissioner from '../pages/Dashboard/LeagueCommissioner'
+import LeagueCommissionerSecond from '../pages/Dashboard/LeagueCommissionerSecond'
+import LeagueDraftSetting from '../pages/Dashboard/LeagueDraftSetting'
+import LeagueDraftSettingSecond from '../pages/Dashboard/LeagueDraftSettingSecond'
 
 
 const AppRoutes = () => {
@@ -28,6 +32,11 @@ const AppRoutes = () => {
           <Route path="/dashboard" element={<Home />} />
           <Route path="/league" element={<League />} />
           <Route path="/matchups" element={<Matchup />} />
+          <Route path="/league-commissioner" element={<LeagueCommissioner />} />
+          <Route path="/league-commissioner-second" element={<LeagueCommissionerSecond />} />
+          <Route path="/league-draft-setting" element={<LeagueDraftSetting />} />
+          <Route path="/league-draft-setting-second" element={<LeagueDraftSettingSecond />} />
+
         </Route>
 
         <Route>
