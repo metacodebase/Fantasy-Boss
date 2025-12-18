@@ -1,3 +1,4 @@
+import { Switch } from "antd"
 
 const LeagueDraftSettingSecond = () => {
   return (
@@ -81,7 +82,7 @@ const LeagueDraftSettingSecond = () => {
                 <button className="yellow-outline-button h-10 text-base!">NO</button>
             </div>
         </div>
-             <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
             <div className="font-semibold text-lg mb-4">
                  Time Per Pick
             </div>
@@ -93,6 +94,47 @@ const LeagueDraftSettingSecond = () => {
                 <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base!">1.5</button>
                 <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base!">2</button>
                
+            </div>
+        </div>
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+            <div className="font-semibold text-lg mb-4">
+            CPU Auto Pick?
+            </div>
+            <div><Switch className="custom-switch" defaultChecked  /></div>
+        </div>
+             <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
+            <div className="font-semibold text-lg mb-4">
+        Undrafted Players Go TO:
+            </div>
+            <div className="flex items-center gap-2">
+                <button className="yellow-button h-10 text-base!">WAIVERS</button>
+                <button className="yellow-outline-button h-10 text-base!">FREE AGENTS</button>
+            </div>
+        </div>
+             <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+            <div className="font-semibold text-lg mb-4">
+           Player Sorting?
+            </div>
+            <div><Switch className="custom-switch" defaultChecked  /></div>
+        </div>
+             <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+            <div className="font-semibold text-lg mb-4">
+         Allow Trades During Draft?
+            </div>
+            <div><Switch className="custom-switch" defaultChecked  /></div>
+        </div>
+             <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+            <div className="font-semibold text-lg mb-4">
+       Override Invite Capacity?
+            </div>
+            <div><Switch className="custom-switch" defaultChecked  /></div>
+        </div>
+         <div className=" pb-3 mt-4">
+            <div className="font-semibold text-lg mb-4">
+        Undrafted Players Go TO:
+            </div>
+            <div className="flex items-center gap-2">
+                <button className="yellow-button h-10 text-base!">RESET</button>
             </div>
         </div>
       </div>

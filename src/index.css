@@ -328,9 +328,23 @@ input[type="number"] {
   background-color: #ffc107;
   opacity: 1;
 }
-
-
-
+/* ant switch */
+.ant-switch.custom-switch.ant-switch-checked {
+  background-color: var(--color-yellow);
+}
+.ant-switch.custom-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background-color: var(--color-yellow);
+}
+.ant-switch.custom-switch.ant-switch-checked .ant-switch-handle::before {
+  background-color: #000000 !important;
+}
+.ant-switch.custom-switch:not(.ant-switch-checked) .ant-switch-handle::before {
+  background-color: var(--color-yellow)!important;
+}
+.ant-switch.custom-switch {
+  border: 1px solid var(--color-yellow);
+  background-color: transparent;
+}
 
 /* When container is narrow, reduce gap a bit */
 
