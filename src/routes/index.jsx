@@ -20,6 +20,10 @@ import LeaguePrice from '../pages/Dashboard/LeaguePrice'
 import SidePool from '../pages/Dashboard/SidePool'
 import PositionLimits from '../pages/Dashboard/PositionLimits'
 import PositionLimitsSecond from '../pages/Dashboard/PositionLimitsSecond'
+import LeagueCreate from '../pages/Dashboard/LeagueCreate'
+import LeagueTieBeakers from '../pages/Dashboard/LeagueTieBeakers'
+import Divisions from '../pages/Dashboard/Divisions'
+import TradingPlayoff from '../pages/Dashboard/TradingPlayoff'
 
 
 const AppRoutes = () => {
@@ -48,6 +52,10 @@ const AppRoutes = () => {
           <Route path="/side-pool" element={<SidePool />} />
           <Route path="/position-limits" element={<PositionLimits />} />
           <Route path="/position-limits-second" element={<PositionLimitsSecond />} />
+          <Route path="/league-create" element={<LeagueCreate />} />
+          <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />
+          <Route path="/divisions" element={<Divisions />} />
+          <Route path="/trading-playoff" element={<TradingPlayoff />} />
 
         </Route>
 
