@@ -469,3 +469,464 @@ input[type="number"] {
   .otp-input-container input { font-size: 18px; padding: 10px 4px !important; }
 }
 
+/* Rosters Progress Table Styling */
+.rosters-progress-table .ant-table {
+  background: transparent !important;
+}
+
+.rosters-progress-table .ant-table-wrapper {
+  font-size: 14px;
+}
+
+.rosters-progress-table .ant-table-thead > tr > th {
+  background: transparent !important;
+  border-bottom: 1px solid #ffffff !important;
+  color: #fff !important;
+  /* font-weight: 700; */
+  font-size: 14px;
+  padding: 12px 8px !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rosters-progress-table .ant-table-tbody > tr {
+  border-bottom: none !important;
+  background: transparent !important;
+}
+
+.rosters-progress-table .ant-table-tbody > tr > td {
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid #ffffff !important;
+  padding: 14px 8px !important;
+  color: #FFFFFF !important;
+  text-align: center;
+}
+
+.rosters-progress-table .ant-table-tbody > tr > td:first-child {
+  text-align: left;
+}
+
+.rosters-progress-table .ant-table-tbody > tr:hover > td {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+/* Player Watch Tabs Styling */
+.player-watch-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.player-watch-tabs .ant-tabs-nav {
+  background: transparent !important;
+  border: 1px solid #BBA014 !important;
+  border-radius: 50px !important;
+  padding: 4px !important;
+  margin-bottom: 0 !important;
+  width: fit-content;
+}
+
+.player-watch-tabs .ant-tabs-nav::before {
+  display: none !important;
+}
+
+.player-watch-tabs .ant-tabs-tab {
+  margin: 0 !important;
+  padding: 8px 20px !important;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50px !important;
+}
+
+.player-watch-tabs .ant-tabs-tab:hover {
+  color: #FAAF15 !important;
+}
+
+.player-watch-tabs .ant-tabs-tab-active {
+  background: linear-gradient(360deg, #FAAC15 0%, #F9DB1B 100%) !important;
+  color: #000000 !important;
+}
+
+.player-watch-tabs .ant-tabs-tab-active:hover {
+  color: #000000 !important;
+}
+
+.player-watch-tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+.ant-tabs.player-watch-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000000 !important;
+}
+
+/* Player Stats Table Styling */
+.player-stats-container {
+  width: 100%;
+  max-width: calc(100vw - 40px);
+  display: block;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1rem;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.player-stats-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.player-stats-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.player-stats-container::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+.player-stats-container::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
+
+.player-stats-header {
+  display: grid;
+  grid-template-columns: 60px 80px 120px 90px 90px 100px 90px 100px 50px;
+  gap: 12px;
+  padding: 16px 12px;
+  border-bottom: 1px solid #404040;
+  background: transparent;
+  width: 100%;
+  min-width: fit-content;
+}
+
+.header-stat-combined {
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-position,
+.header-label,
+.header-player,
+.header-stat,
+.header-badges,
+.header-action {
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-position,
+.header-label,
+.header-player {
+  text-align: left;
+}
+
+.player-stats-row {
+  display: grid;
+  grid-template-columns: 60px 80px 120px 90px 90px 100px 90px 100px 50px;
+  gap: 12px;
+  padding: 16px 12px;
+  border-bottom: 1px solid #404040;
+  align-items: center;
+  background: transparent;
+  transition: background-color 0.2s;
+  width: 100%;
+  min-width: fit-content;
+}
+
+.player-stats-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.stat-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.player-position {
+  flex-direction: column;
+  gap: 6px;
+  justify-content: flex-start;
+}
+
+.badge-position {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000000;
+  background: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 45px;
+}
+
+.badge-draft {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000000;
+  background: linear-gradient(360deg, #FAAC15 0%, #F9DB1B 100%);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 45px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.player-image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-info-combined {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-value-combined {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #3E3E3E;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.player-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.player-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.player-team {
+  font-size: 12px;
+  color: #FAAF15;
+  white-space: nowrap;
+}
+
+.stat-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.player-badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.badge-adp,
+.badge-rnk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3E3E3E;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  min-width: 35px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.player-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.player-star iconify-icon {
+  color: #FFFFFF;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.player-star iconify-icon.star-active {
+  color: #FAAF15;
+  opacity: 1;
+}
+
+.player-star iconify-icon:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .player-stats-header,
+  .player-stats-row {
+    grid-template-columns: 50px 150px repeat(4, 70px) 80px 40px;
+  }
+
+  .header-stat {
+    font-size: 11px;
+  }
+
+  .stat-value {
+    font-size: 12px;
+  }
+
+  .player-name {
+    font-size: 12px;
+  }
+
+  .player-avatar {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .player-stats-header,
+  .player-stats-row {
+    grid-template-columns: 45px 120px repeat(3, 60px) 70px 35px;
+  }
+
+  .player-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-stat {
+    font-size: 10px;
+  }
+
+  .stat-value {
+    font-size: 11px;
+  }
+
+  .player-name {
+    font-size: 11px;
+  }
+
+  .player-team {
+    font-size: 11px;
+  }
+
+  .badge-adp,
+  .badge-rnk {
+    font-size: 9px;
+    padding: 4px 6px;
+    min-width: 30px;
+  }
+
+  .badge-position,
+  .badge-draft {
+    font-size: 10px;
+    padding: 3px 6px;
+    min-width: 40px;
+  }
+
+  .player-watch-tabs .ant-tabs-tab {
+    padding: 6px 16px !important;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-stats-header,
+  .player-stats-row {
+    grid-template-columns: 40px 100px repeat(2, 50px) 60px 30px;
+  }
+
+  .player-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-stat {
+    font-size: 9px;
+  }
+
+  .stat-value {
+    font-size: 10px;
+  }
+
+  .player-name {
+    font-size: 10px;
+  }
+
+  .player-team {
+    font-size: 9px;
+  }
+
+  .badge-adp,
+  .badge-rnk {
+    font-size: 8px;
+    padding: 3px 5px;
+    min-width: 28px;
+  }
+
+  .badge-position,
+  .badge-draft {
+    font-size: 9px;
+    padding: 2px 4px;
+    min-width: 35px;
+  }
+
+  .player-watch-tabs .ant-tabs-tab {
+    padding: 6px 12px !important;
+    font-size: 11px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .rosters-progress-table .ant-table-thead > tr > th {
+    font-size: 12px;
+    padding: 10px 6px !important;
+  }
+
+  .rosters-progress-table .ant-table-tbody > tr > td {
+    padding: 12px 6px !important;
+    font-size: 12px;
+  }
+}
+

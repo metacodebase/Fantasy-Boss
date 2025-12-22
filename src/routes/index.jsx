@@ -24,6 +24,8 @@ import LeagueCreate from '../pages/Dashboard/LeagueCreate'
 import LeagueTieBeakers from '../pages/Dashboard/LeagueTieBeakers'
 import Divisions from '../pages/Dashboard/Divisions'
 import TradingPlayoff from '../pages/Dashboard/TradingPlayoff'
+import KeeperSettings from '../pages/Dashboard/KeeperSettings'
+import PlayerWatch from '../pages/Dashboard/PlayerWatchlist/PlayerWatch'
 
 
 const AppRoutes = () => {
@@ -42,6 +44,8 @@ const AppRoutes = () => {
           <Route path="/dashboard" element={<Home />} />
           <Route path="/league" element={<League />} />
           <Route path="/matchups" element={<Matchup />} />
+          <Route path="/players" element={<PlayerWatch />} />
+
           <Route path="/league-commissioner" element={<LeagueCommissioner />} />
           <Route path="/league-commissioner-second" element={<LeagueCommissionerSecond />} />
           <Route path="/league-draft-setting" element={<LeagueDraftSetting />} />
@@ -56,6 +60,7 @@ const AppRoutes = () => {
           <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />
           <Route path="/divisions" element={<Divisions />} />
           <Route path="/trading-playoff" element={<TradingPlayoff />} />
+          <Route path="/keeper-settings" element={<KeeperSettings />} />
 
         </Route>
 

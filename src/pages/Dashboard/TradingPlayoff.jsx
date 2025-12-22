@@ -74,8 +74,8 @@ const TradingPlayoff = () => {
             </div>
             <div className="flex items-center gap-2">
                 <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">TRADE SNIPER</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">VETO</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">NONE</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">VETO</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">NONE</button>
             </div>
         </div>
 
@@ -123,8 +123,8 @@ const TradingPlayoff = () => {
             </div>
             <div className="flex items-center gap-2">
                 <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">1 WEEK + FINALS</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">1 WEEK + FINALS 2WKS</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">2 WEEKS + FINALS</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">1 WEEK + FINALS 2WKS</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">2 WEEKS + FINALS</button>
             </div>
         </div>
 
@@ -153,8 +153,8 @@ const TradingPlayoff = () => {
             </div>
             <div className="flex items-center gap-2">
                 <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">NONE</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">POOP BOWL</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base! text-yellow font-semibold">CONSULTATION BOWL</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">POOP BOWL</button>
+                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">CONSULTATION BOWL</button>
             </div>
         </div>
     </div>
