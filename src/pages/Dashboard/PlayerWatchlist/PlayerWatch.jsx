@@ -197,7 +197,7 @@ const PlayerWatch = () => {
               <div className="bg-lightgray p-5 rounded-[18px]">
                <div className="flex justify-between gap-12 mt-6">
                 <div className="">
-                    <img src="/public/assets/images/team-logo.png" className="h-[115px] w-24" alt="team-logo" />
+                    <img src="/assets/images/team-logo.png" className="h-[115px] w-24" alt="team-logo" />
                 </div>
                 <div className=" relative">
                     <div className="flex flex-col justify-center items-center gap-2 relative z-20">
@@ -222,7 +222,7 @@ const PlayerWatch = () => {
                         <p className="text-xs text-[#01C710] font-medium">Picking Now • 1 min left</p>
                     </div>
                     <div>
-                        <img src="/public/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
+                        <img src="/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
                     </div>
                 </div>
                 <div className="bg-linear-to-b from-[#1E1E1E] via-[#3B3B3B] rounded-xl border border-[#3e3e3e] p-3 flex justify-between gap-4">
@@ -233,7 +233,7 @@ const PlayerWatch = () => {
                         <p className="text-xs text-[#FFC400] font-medium">On Deck</p>
                     </div>
                     <div>
-                        <img src="/public/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
+                        <img src="/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
                     </div>
                 </div>
                 <div className="bg-linear-to-b from-[#1E1E1E] via-[#3B3B3B] rounded-xl border border-[#3e3e3e] p-3 flex justify-between gap-4">
@@ -244,7 +244,7 @@ const PlayerWatch = () => {
                         <p className="text-xs text-[#FF0000] font-medium">In The Hole</p>
                     </div>
                     <div>
-                        <img src="/public/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
+                        <img src="/assets/images/team-logo-red.png" className="h-16 min-w-12 rounded-3xl" alt="team-logo" />
                     </div>
                 </div>
                </div>
