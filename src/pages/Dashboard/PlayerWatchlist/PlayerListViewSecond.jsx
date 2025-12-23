@@ -2,9 +2,10 @@ import { Col, Modal, Row, Switch, Table, Tabs } from "antd"
 import { useState } from "react"
 import "./PlayerWatch.css"
 
-const PlayerWatch = () => {
+const PlayerListViewSecond = () => {
   const [activeTab, setActiveTab] = useState('1')
-  const [settingsModalOpen, setSettingsModalOpen] = useState(false);
+  const [settingsModalOpen, setSettingsModalOpen] = useState(false); 
+  const [draftModalOpen, setDraftModalOpen] = useState(false); 
 
 
   const playerStatsColumns = [
@@ -259,12 +260,12 @@ const PlayerWatch = () => {
         <div>
           <h4 className="font-semibold text-lg md:text-2xl text-white">Marks League - Live Draft</h4>
           <p className="text-gray text-sm md:text-base font-medium mt-1">
-       6 team PPR • 2024 Season
+      6 team PPR • 2024 Season
           </p>
         </div>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1 px-4 py-2 rounded-full bg-[#3E3E3E]">
-            <span className="text-white text-sm md:text-base font-medium">DRAFT BOARD</span>
+            <button onClick={() => setDraftModalOpen(true)} className="text-white text-sm md:text-base font-medium">DRAFT BOARD</button>
           </div>
         </div>
       </div>
@@ -272,7 +273,7 @@ const PlayerWatch = () => {
       <div className="bg-lightgray p-5 rounded-[18px] mt-4 flex items-center justify-between">
         <div>
             <div className="text-lg font-semibold text-gray mb-2">
-                Round
+                2nd nomination
             </div>
             <p className="font-medium text-lg">
                 Round 1 • Pick 1
@@ -295,6 +296,7 @@ const PlayerWatch = () => {
             </p>
         </div>
       </div>
+      
       {/*  */}
           <Row
               gutter={[
@@ -306,23 +308,24 @@ const PlayerWatch = () => {
               {/* Left Column - Draft Section */}
               <Col xs={24} lg={12}>
               <div className="bg-lightgray p-5 rounded-[18px]">
-               <div className="flex justify-between gap-12 mt-6">
-                <div className="">
-                    <img src="/assets/images/team-logo.png" className="h-[115px] w-24" alt="team-logo" />
+               <div className="flex justify-between gap-20 mt-6">
+                <div className="md:min-w-32">
+                    <img src="/assets/images/team-logo.png" className="h-[115px] min-w-24" alt="team-logo" />
+                    <div className="font-semibold">Team 1 Picking</div>
                 </div>
-                <div className=" relative">
-                    <div className="flex flex-col justify-center items-center gap-2 relative z-20">
-                        <div className="text-sm">
-                            Time Remaining
-                        </div>
-                        <div className="text-6xl">01:59</div>
-                        <div className="text-sm text-gray">
-                            Auto-pick after timer expires
-                        </div>
-                    <div className="border border-[#3E3E3E] rounded-md h-20 w-[300px] absolute -top-2"></div>
+               <div className="flex justify-between items-center border border-[#3E3E3E] rounded-xl p-5 mt-6 relative w-full">
+                    <div className="font-medium ms-16">
+                      J. Allen <br />
+                      BUF <br />
+                      245 Proj Pts <br />
+                      12.3 ADP
                     </div>
-                </div>
-                <div></div>
+                    <div className="absolute -right-2 top-5.5">
+                      <img src="/assets/images/allen.png" className="h-[102px]" alt="allen" />
+                    </div>
+                    <button className="rounded-xl bg-[#004B8B] h-[60px] w-[92px] absolute top-1/3 -left-12">QB</button>
+              </div>
+             
                </div>
                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div className="bg-linear-to-b from-[#1E1E1E] via-[#3B3B3B] rounded-xl border border-[#3e3e3e] p-3 flex justify-between gap-4">
@@ -491,7 +494,7 @@ const PlayerWatch = () => {
       >
                <div className="flex items-center justify-between my-4">
             <div className="w-6"></div>
-                        <h2 className="text-center font-bold text-2xl">Filter</h2>
+                        <h2 className="text-center font-bold text-2xl">Draft Settings</h2>
                  <button onClick={() => setSettingsModalOpen(false)} className=" text-white w-6 text-2xl">
                    <iconify-icon icon="gridicons:cross"></iconify-icon>
                  </button>
@@ -499,37 +502,58 @@ const PlayerWatch = () => {
           <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
         
                 <div className="">
-                 Rookies Only
+                Results in Chat
                 </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
           <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
         
                 <div className="">
-                Show Drafted
+                Auto Draft
                 </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
-          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between mb-6">
+          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 mb-6 flex items-center justify-between">
         
                 <div className="">
-                Year
+               Auto Draft
                 </div>
-               <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px]">
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
-               <iconify-icon icon="rivet-icons:minus"></iconify-icon>
-              </button>
-              <div className="text-lg font-medium">2002</div>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
-               <iconify-icon icon="qlementine-icons:plus-16"></iconify-icon>
-              </button>
-          </div>
+            <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
-        <button className="yellow-button w-full">DONE</button>
+     
+        <button className="yellow-button w-full h-[52px]">DONE</button>
     
-      </Modal>
+               </Modal>
+
+                 <Modal
+        open={draftModalOpen}
+        onCancel={() => setDraftModalOpen(false)}
+        footer={null}
+        centered
+        width={550}
+        className="settings-modal"
+        closeIcon={
+          null
+        }
+       
+      >
+            <div className="flex flex-col items-center justify-center text-center gap-6">
+              <img src="/public/assets/images/draft.png" className="h-[222px]" alt="draft" />
+              <div className="font-medium text-xl">
+                Hold on there Cowboy. <br/>
+                You&apos;re about to leave the draft!
+              </div>
+            </div>
+                <div className="flex flex-col mt-5 gap-5">
+                  <button className="yellow-outline-button h-[52px] w-full border-dashed!">
+                              Exit Draft
+                              </button>
+                               <button className="yellow-button w-full h-[52px]">Stay In Draft</button>
+                </div>
+    
+               </Modal>
     </div>
   )
 }
 
-export default PlayerWatch
+export default PlayerListViewSecond

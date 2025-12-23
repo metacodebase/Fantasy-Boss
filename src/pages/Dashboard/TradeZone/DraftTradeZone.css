@@ -1,0 +1,120 @@
+/* Trade Players and Picks Lists */
+.trade-players-list,
+.trade-picks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Player and Pick Items */
+.player-item,
+.pick-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.player-item:hover,
+.pick-item:hover {
+  opacity: 0.8;
+}
+
+/* Rounded Checkbox */
+.rounded-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #f9b816;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.rounded-checkbox.checked {
+  background: #f9b816;
+  border-color: #f9b816;
+  color: #000000 !important;
+}
+
+.checkbox-icon {
+  color: #000000 !important;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Player and Pick Text */
+.player-text,
+.pick-text {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .player-item,
+  .pick-item {
+    padding: 10px 0;
+  }
+
+  .player-text,
+  .pick-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .player-item,
+  .pick-item {
+    padding: 8px 0;
+    gap: 10px;
+  }
+
+  .rounded-checkbox {
+    width: 20px;
+    height: 20px;
+    border-width: 1.5px;
+  }
+
+  .checkbox-icon {
+    font-size: 12px;
+  }
+
+  .player-text,
+  .pick-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-item,
+  .pick-item {
+    padding: 6px 0;
+    gap: 8px;
+  }
+
+  .rounded-checkbox {
+    width: 18px;
+    height: 18px;
+    border-width: 1px;
+  }
+
+  .checkbox-icon {
+    font-size: 10px;
+  }
+
+  .player-text,
+  .pick-text {
+    font-size: 11px;
+  }
+}

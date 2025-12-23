@@ -1,0 +1,68 @@
+/* Trade Zone Tabs */
+.tabs-wrapper {
+  width: 100%;
+}
+/* AntD Tabs Override */
+.trade-zone-tabs {
+  width: 100%;
+}
+.ant-tabs.trade-zone-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #FABA17;
+}
+.ant-tabs.trade-zone-tabs .ant-tabs-ink-bar {
+    background-color: #FABA17;
+}
+.trade-zone-tabs .ant-tabs-nav {
+  background: transparent;
+  border-bottom: none;
+  margin: 0;
+}
+
+.trade-zone-tabs .ant-tabs-nav::before {
+  display: none;
+}
+
+.trade-zone-tabs .ant-tabs-nav-list {
+  gap: 0;
+  display: flex;
+}
+
+.trade-zone-tabs .ant-tabs-tab {
+  padding: 12px 24px;
+  margin: 0;
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  background: transparent;
+  position: relative;
+  margin-bottom: 14px;
+}
+.ant-tabs.trade-zone-tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+    margin-bottom: 24px;
+}
+
+.trade-zone-tabs .ant-tabs-tab:hover {
+  color: #ffffff;
+}
+
+.trade-zone-tabs .ant-tabs-tab-active {
+  color: #ffffff;
+}
+
+.trade-zone-tabs .ant-tabs-tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+}
+
+.trade-zone-tabs .ant-tabs-content {
+  background: transparent;
+}
+

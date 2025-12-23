@@ -26,6 +26,12 @@ import Divisions from '../pages/Dashboard/Divisions'
 import TradingPlayoff from '../pages/Dashboard/TradingPlayoff'
 import KeeperSettings from '../pages/Dashboard/KeeperSettings'
 import PlayerWatch from '../pages/Dashboard/PlayerWatchlist/PlayerWatch'
+import PlayerListView from '../pages/Dashboard/PlayerWatchlist/PlayerListView'
+import PlayerListViewSecond from '../pages/Dashboard/PlayerWatchlist/PlayerListViewSecond'
+import DraftWatchlist from '../pages/Dashboard/PlayerWatchlist/DraftWatchlist'
+import DraftTeams from '../pages/Dashboard/PlayerWatchlist/DraftTeams'
+import TradeZone from '../pages/Dashboard/TradeZone/TradeZone'
+import DraftTradeZone from '../pages/Dashboard/TradeZone/DraftTradeZone'
 
 
 const AppRoutes = () => {
@@ -45,6 +51,13 @@ const AppRoutes = () => {
           <Route path="/league" element={<League />} />
           <Route path="/matchups" element={<Matchup />} />
           <Route path="/players" element={<PlayerWatch />} />
+          <Route path="/player-list-view" element={<PlayerListView />} />
+          <Route path="/player-list-view-second" element={<PlayerListViewSecond />} />
+          <Route path="/draft-watchlist" element={<DraftWatchlist />} />
+          <Route path="/draft-teams" element={<DraftTeams />} />
+          <Route path="/trade" element={<TradeZone />} />
+          <Route path="/draft-trade" element={<DraftTradeZone />} />
+
 
           <Route path="/league-commissioner" element={<LeagueCommissioner />} />
           <Route path="/league-commissioner-second" element={<LeagueCommissionerSecond />} />

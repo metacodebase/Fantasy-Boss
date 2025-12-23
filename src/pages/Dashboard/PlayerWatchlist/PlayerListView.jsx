@@ -1,10 +1,10 @@
-import { Col, Modal, Row, Switch, Table, Tabs } from "antd"
+import { Col,  Row,  Table, Tabs } from "antd"
 import { useState } from "react"
 import "./PlayerWatch.css"
 
-const PlayerWatch = () => {
+const PlayerListView = () => {
   const [activeTab, setActiveTab] = useState('1')
-  const [settingsModalOpen, setSettingsModalOpen] = useState(false);
+ 
 
 
   const playerStatsColumns = [
@@ -259,7 +259,7 @@ const PlayerWatch = () => {
         <div>
           <h4 className="font-semibold text-lg md:text-2xl text-white">Marks League - Live Draft</h4>
           <p className="text-gray text-sm md:text-base font-medium mt-1">
-       6 team PPR • 2024 Season
+      6 team PPR • 2024 Season
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -272,7 +272,7 @@ const PlayerWatch = () => {
       <div className="bg-lightgray p-5 rounded-[18px] mt-4 flex items-center justify-between">
         <div>
             <div className="text-lg font-semibold text-gray mb-2">
-                Round
+                2nd nomination
             </div>
             <p className="font-medium text-lg">
                 Round 1 • Pick 1
@@ -295,6 +295,32 @@ const PlayerWatch = () => {
             </p>
         </div>
       </div>
+      {/* team high bid */}
+          <div className="bg-lightgray p-5 rounded-[18px] mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div className="flex flex-col gap-4">
+                <div className="text-gray">Team 1 has high bid</div>
+                <div className="text-2xl md:text-3xl font-bold">$40</div>
+                <div className="flex items-center gap-2 justify-between w-full">
+                  <button className="yellow-button w-full h-[38px]! rounded-xl!">$42</button>
+                  <button className="yellow-button w-full h-[38px]! bg-linear-to-b! from-[#007B09] to-[#007B09] text-white! rounded-xl! border-none!">Bid $42</button>
+                </div>
+                <div className="font-medium">:15 Remaining</div>
+              </div>
+              <div className="flex justify-between items-center border border-[#3E3E3E] rounded-xl p-5 mt-6 relative">
+                    <div className="font-medium md:text-2xl ms-16">
+                      J. Allen <br />
+                      BUF <br />
+                      245 Proj Pts <br />
+                      12.3 ADP
+                    </div>
+                    <div className="absolute -right-5 top-4">
+                      <img src="/assets/images/allen.png" className="h-[152px]" alt="allen" />
+                    </div>
+                    <button className="rounded-xl bg-[#004B8B] h-[60px] w-[92px] absolute top-1/3 -left-12">QB</button>
+              </div>
+            </div>
+          </div>
       {/*  */}
           <Row
               gutter={[
@@ -468,7 +494,7 @@ const PlayerWatch = () => {
                         },
                       ]}
                     />
-                    <button onClick={() => setSettingsModalOpen(true)} className="absolute top-0 right-0 flex border border-yellow items-center gap-2 px-4 py-2 rounded-full"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
+                    <button className="absolute top-0 right-0 flex border border-yellow items-center gap-2 px-4 py-2 rounded-full"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
             </div>
 
           </div>
@@ -477,59 +503,9 @@ const PlayerWatch = () => {
               </Col>
             </Row>
 
-                <Modal
-        open={settingsModalOpen}
-        onCancel={() => setSettingsModalOpen(false)}
-        footer={null}
-        centered
-        width={550}
-        className="settings-modal"
-        closeIcon={
-          null
-        }
        
-      >
-               <div className="flex items-center justify-between my-4">
-            <div className="w-6"></div>
-                        <h2 className="text-center font-bold text-2xl">Filter</h2>
-                 <button onClick={() => setSettingsModalOpen(false)} className=" text-white w-6 text-2xl">
-                   <iconify-icon icon="gridicons:cross"></iconify-icon>
-                 </button>
-        </div>
-          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
-        
-                <div className="">
-                 Rookies Only
-                </div>
-            <div><Switch className="custom-switch" defaultChecked  /></div>
-        </div>
-          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
-        
-                <div className="">
-                Show Drafted
-                </div>
-            <div><Switch className="custom-switch" defaultChecked  /></div>
-        </div>
-          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between mb-6">
-        
-                <div className="">
-                Year
-                </div>
-               <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px]">
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
-               <iconify-icon icon="rivet-icons:minus"></iconify-icon>
-              </button>
-              <div className="text-lg font-medium">2002</div>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
-               <iconify-icon icon="qlementine-icons:plus-16"></iconify-icon>
-              </button>
-          </div>
-        </div>
-        <button className="yellow-button w-full">DONE</button>
-    
-      </Modal>
     </div>
   )
 }
 
-export default PlayerWatch
+export default PlayerListView

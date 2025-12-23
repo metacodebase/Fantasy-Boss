@@ -440,34 +440,8 @@ input[type="number"] {
 .ant-select.week-select .ant-select-open .ant-select-content-value {
   color: #FFFFFF;
 }
-@media (max-width: 768px) {
-  .matchups-swiper {
-    padding-bottom: 25px;
-  }
 
-  .matchups-swiper .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-  }
-    .standings-table .ant-table-thead > tr > th {
-    font-size: 11px;
-    padding: 10px 6px !important;
-  }
 
-  .standings-table .ant-table-tbody > tr > td {
-    padding: 12px 6px !important;
-    font-size: 12px;
-  }
-  .yellow-button {
-    font-size: 16px;
-    padding: 14px 28px;
- }
-}
-
-@media (max-width: 480px) {
-  .otp-input-container { gap: 0.5rem; }
-  .otp-input-container input { font-size: 18px; padding: 10px 4px !important; }
-}
 
 /* Rosters Progress Table Styling */
 .rosters-progress-table .ant-table {
@@ -562,159 +536,8 @@ input[type="number"] {
   color: #000000 !important;
 }
 
-/* Player Stats Table Styling */
-.player-stats-container {
-  width: 100%;
-  max-width: calc(100vw - 40px);
-  display: block;
-  overflow-x: auto;
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 1rem;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
-.player-stats-container::-webkit-scrollbar {
-  height: 6px;
-}
 
-.player-stats-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.player-stats-container::-webkit-scrollbar-thumb {
-  background: #404040;
-  border-radius: 4px;
-}
-
-.player-stats-container::-webkit-scrollbar-thumb:hover {
-  background: #606060;
-}
-
-.player-stats-header {
-  display: grid;
-  grid-template-columns: 60px 80px 120px 90px 90px 100px 90px 100px 50px;
-  gap: 12px;
-  padding: 16px 12px;
-  border-bottom: 1px solid #404040;
-  background: transparent;
-  width: 100%;
-  min-width: fit-content;
-}
-
-.header-stat-combined {
-  font-size: 10px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.header-position,
-.header-label,
-.header-player,
-.header-stat,
-.header-badges,
-.header-action {
-  font-size: 12px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.header-position,
-.header-label,
-.header-player {
-  text-align: left;
-}
-
-.player-stats-row {
-  display: grid;
-  grid-template-columns: 60px 80px 120px 90px 90px 100px 90px 100px 50px;
-  gap: 12px;
-  padding: 16px 12px;
-  border-bottom: 1px solid #404040;
-  align-items: center;
-  background: transparent;
-  transition: background-color 0.2s;
-  width: 100%;
-  min-width: fit-content;
-}
-
-.player-stats-row:hover {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.stat-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.player-position {
-  flex-direction: column;
-  gap: 6px;
-  justify-content: flex-start;
-}
-
-.badge-position {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  color: #000000;
-  background: #FFFFFF;
-  padding: 4px 8px;
-  border-radius: 4px;
-  text-align: center;
-  min-width: 45px;
-}
-
-.badge-draft {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  color: #000000;
-  background: linear-gradient(360deg, #FAAC15 0%, #F9DB1B 100%);
-  padding: 4px 8px;
-  border-radius: 4px;
-  text-align: center;
-  min-width: 45px;
-}
-
-.player-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: flex-start;
-}
-
-.player-image-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.player-info-combined {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.stat-value-combined {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  background: #3E3E3E;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-align: center;
-}
 
 .player-avatar {
   width: 50px;
@@ -724,79 +547,6 @@ input[type="number"] {
   flex-shrink: 0;
 }
 
-.player-details {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 0;
-}
-
-.player-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #FFFFFF;
-  white-space: nowrap;
-}
-
-.player-team {
-  font-size: 12px;
-  color: #FAAF15;
-  white-space: nowrap;
-}
-
-.stat-value {
-  font-size: 14px;
-  font-weight: 500;
-  color: #FFFFFF;
-  white-space: nowrap;
-}
-
-.player-badges {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-}
-
-.badge-adp,
-.badge-rnk {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #3E3E3E;
-  padding: 6px 8px;
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #FFFFFF;
-  text-align: center;
-  min-width: 35px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.player-star {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.player-star iconify-icon {
-  color: #FFFFFF;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.player-star iconify-icon.star-active {
-  color: #FAAF15;
-  opacity: 1;
-}
-
-.player-star iconify-icon:hover {
-  opacity: 1;
-}
 
 @media (max-width: 1024px) {
   .player-stats-header,
@@ -823,103 +573,36 @@ input[type="number"] {
 }
 
 @media (max-width: 768px) {
-  .player-stats-header,
-  .player-stats-row {
-    grid-template-columns: 45px 120px repeat(3, 60px) 70px 35px;
+  .matchups-swiper {
+    padding-bottom: 25px;
   }
 
+  .matchups-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+    .standings-table .ant-table-thead > tr > th {
+    font-size: 11px;
+    padding: 10px 6px !important;
+  }
+
+  .standings-table .ant-table-tbody > tr > td {
+    padding: 12px 6px !important;
+    font-size: 12px;
+  }
+  .yellow-button {
+    font-size: 16px;
+    padding: 14px 28px;
+ }
   .player-avatar {
     width: 40px;
     height: 40px;
   }
-
-  .header-stat {
-    font-size: 10px;
-  }
-
-  .stat-value {
-    font-size: 11px;
-  }
-
-  .player-name {
-    font-size: 11px;
-  }
-
-  .player-team {
-    font-size: 11px;
-  }
-
-  .badge-adp,
-  .badge-rnk {
-    font-size: 9px;
-    padding: 4px 6px;
-    min-width: 30px;
-  }
-
-  .badge-position,
-  .badge-draft {
-    font-size: 10px;
-    padding: 3px 6px;
-    min-width: 40px;
-  }
-
   .player-watch-tabs .ant-tabs-tab {
     padding: 6px 16px !important;
     font-size: 12px;
   }
-}
-
-@media (max-width: 480px) {
-  .player-stats-header,
-  .player-stats-row {
-    grid-template-columns: 40px 100px repeat(2, 50px) 60px 30px;
-  }
-
-  .player-avatar {
-    width: 35px;
-    height: 35px;
-  }
-
-  .header-stat {
-    font-size: 9px;
-  }
-
-  .stat-value {
-    font-size: 10px;
-  }
-
-  .player-name {
-    font-size: 10px;
-  }
-
-  .player-team {
-    font-size: 9px;
-  }
-
-  .badge-adp,
-  .badge-rnk {
-    font-size: 8px;
-    padding: 3px 5px;
-    min-width: 28px;
-  }
-
-  .badge-position,
-  .badge-draft {
-    font-size: 9px;
-    padding: 2px 4px;
-    min-width: 35px;
-  }
-
-  .player-watch-tabs .ant-tabs-tab {
-    padding: 6px 12px !important;
-    font-size: 11px;
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  .rosters-progress-table .ant-table-thead > tr > th {
+   .rosters-progress-table .ant-table-thead > tr > th {
     font-size: 12px;
     padding: 10px 6px !important;
   }
@@ -929,4 +612,46 @@ input[type="number"] {
     font-size: 12px;
   }
 }
+
+@media (max-width: 480px) {
+ 
+  .player-avatar {
+    width: 35px;
+    height: 35px;
+  }
+ .otp-input-container { gap: 0.5rem; }
+  .otp-input-container input { font-size: 18px; padding: 10px 4px !important; }
+
+  .player-watch-tabs .ant-tabs-tab {
+    padding: 6px 12px !important;
+    font-size: 11px;
+  }
+}
+
+/* Active Navigation Link with Gradient Border */
+.nav-link-active {
+  color: #F9D41B !important;
+  position: relative;
+  padding-bottom: 8px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #000000 0%, #F9D41B 50%, #000000 100%);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-active:hover {
+  color: #ffc107 !important;
+}
+
+
+
 

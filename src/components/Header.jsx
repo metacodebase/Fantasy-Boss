@@ -91,7 +91,7 @@ const Header = () => {
               to={item.href}
               className={`text-xs md:text-sm font-semibold text-gray uppercase tracking-wider transition-all duration-300 px-3 py-2 rounded-lg ${
                 isActive(item.href)
-                  ? "text-yellow bg-opacity-10 border border-yellow border-opacity-30"
+                  ? "nav-link-active"
                   : "text-gray hover:text-yellow"
               }`}
             >
