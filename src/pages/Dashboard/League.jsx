@@ -269,7 +269,7 @@ const League = () => {
 
                       {/* VS Badge - Overlaps both boxes */}
                       <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
-                        <div className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] text-black font-medium px-10 h-[26px]  text-xs md:text-[16px] rounded-3xl flex items-center justify-center">
+                        <div className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] text-black font-medium px-6 lg:px-10 h-[26px]  text-xs md:text-[16px] rounded-3xl flex items-center justify-center">
                           vs
                         </div>
                       </div>

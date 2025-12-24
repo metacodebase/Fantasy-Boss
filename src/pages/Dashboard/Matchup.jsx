@@ -282,7 +282,7 @@ const Matchup = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
         <div>
             <h4 className="font-semibold text-base lg:text-2xl">Fanisko League Matchup</h4>
             <p className="text-gray text-base lg:text-lg font-medium">6- Team PPR • 2024</p>
@@ -304,7 +304,7 @@ const Matchup = () => {
       </div>
       {/* matches */}
       <div className="bg-[#191818] rounded-[18px] p-5 mt-4">
-        <img src="/assets/images/matchup-main.png" className="h-auto lg:h-[355px] rounded-xl w-full" alt="matchup main" />
+        <img src="/assets/images/matchup-main.png" className="h-32 lg:h-[355px] rounded-xl w-full" alt="matchup main" />
           <Row  gutter={[
                       { xs: 16, sm: 32, md: 22 },
                       { xs: 16, sm: 32, md: 22 },
@@ -339,10 +339,10 @@ const Matchup = () => {
       </div>
       {/* graph */}
       <div className="bg-[#191818] rounded-[18px] p-5 mt-4">
-        <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-4">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                 <div className="flex items-center gap-1 px-4 py-2 rounded-full bg-linear-to-b from-lightgray via-[#333333] to-[#484848]">
-                   <span className="text-white text-base font-medium">Week 4</span>
+                   <span className="text-white text-base font-medium mx-auto">Week 4</span>
                 </div>
                 <div className="font-medium">
                     Position by position breakdown

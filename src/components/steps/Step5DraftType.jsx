@@ -18,11 +18,11 @@ const Step5DraftType = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
       <div className="step-content">
          <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">Draft Type</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Draft Type</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/draft-type.png" className="w-44" alt="draft-type" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">  Curved, straight, or the biggest wallet. They&apos;re all good options. Just ask your mom.</p>
+          <p className="text-white lg:text-[20px] mb-5 text-center">  Curved, straight, or the biggest wallet. They&apos;re all good options. Just ask your mom.</p>
         </div>
 
         <div className="draft-options">

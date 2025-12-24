@@ -584,15 +584,8 @@
     width: 100%;
   }
 
-  .options-grid,
-  .draft-options,
-  .access-options,
-  .fees-options {
-    grid-template-columns: 1fr;
-  }
 
   .options-flex {
-    flex-direction: column;
     gap: 12px;
   }
 
@@ -609,6 +602,7 @@
   }
 
   .size-button {
+    height: 60px;
     aspect-ratio: auto;
     padding: 12px;
   }
@@ -640,11 +634,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .access-options,
-  .fees-options {
-    grid-template-columns: 1fr;
-  }
-
   .ready-buttons {
     width: 100%;
   }
@@ -654,11 +643,11 @@
   }
 
   .step-content {
-    padding: 16px 12px;
+    padding: 16px;
   }
 
   .step-header {
-    padding: 12px;
+    padding: 16px;
   }
 
   .step-title {

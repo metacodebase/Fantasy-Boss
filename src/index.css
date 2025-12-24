@@ -491,7 +491,6 @@ input[type="number"] {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
 .player-watch-tabs .ant-tabs-nav {
   background: transparent !important;
   border: 1px solid #BBA014 !important;

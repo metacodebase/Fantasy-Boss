@@ -79,7 +79,7 @@ const Step2LeagueName = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
           <div className="bg-lightgray rounded-[18px] mt-4">
             <div className=" mb-6">
-              <h4 className="text-white text-2xl font-semibold  uppercase">Copy an Existing League</h4>
+              <h4 className="text-white text-xl lg:text-2xl font-semibold  uppercase">Copy an Existing League</h4>
             </div>
 
             {/* Leagues List */}

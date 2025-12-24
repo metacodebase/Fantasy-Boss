@@ -120,7 +120,7 @@ const StandingsTable = () => {
 
         return (
           <div>
-            <div className="text-white font-bold text-[16px] flex items-center gap-2">
+            <div className="text-white font-bold text-sm lg:text-[16px] flex items-center gap-2">
               {text}
               <span style={{ color: iconColor }}>  <iconify-icon icon="icon-park-solid:up-one"></iconify-icon></span>
             </div>

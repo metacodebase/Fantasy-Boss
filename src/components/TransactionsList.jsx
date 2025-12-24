@@ -54,7 +54,7 @@ const TransactionsList = () => {
                     ></iconify-icon>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-white font-bold text-sm md:text-base">
+                    <div className="text-white font-bold text-sm lg:text-base">
                       {transaction.name}
                     </div>
                   </div>

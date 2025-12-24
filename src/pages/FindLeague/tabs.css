@@ -223,7 +223,7 @@
 @media (max-width: 768px) {
   .leagues-tabs .ant-tabs-tab {
     padding: 10px 16px;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .leagues-grid {
@@ -267,7 +267,7 @@
 @media (max-width: 480px) {
   .leagues-tabs .ant-tabs-tab {
     padding: 8px 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .leagues-grid {

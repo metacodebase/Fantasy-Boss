@@ -163,7 +163,7 @@ const onChange = key => {
   return (
     <div>
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-2 bg-[linear-gradient(180deg,#010101_0%,#313131_100%)] rounded-3xl p-5">
+      <div className="hidden lg:flex flex-col lg:flex-row items-center justify-between gap-2 bg-[linear-gradient(180deg,#010101_0%,#313131_100%)] rounded-3xl p-5">
         {/* League Select Section */}
         <div className="flex flex-col lg:flex-row items-center gap-3">
             <div className="flex items-center gap-3 bg-[#3E3E3E] border border-gray-700 rounded-lg px-4 py-2">

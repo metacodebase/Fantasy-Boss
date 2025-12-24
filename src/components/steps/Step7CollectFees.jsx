@@ -19,11 +19,11 @@ const Step7CollectFees = ({ leagueData, updateLeagueData, onNext, onBack }) => {
       <div className="step-content">
    
           <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">Use FantasyBoss to collect League fees?</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Use FantasyBoss to collect League fees?</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/collect.png" className="w-64" alt="collect fees" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">We're way more trustworthy than your cousin Vinny. And we break less cookies.</p>
+          <p className="text-white lg:text-[20px] mb-5 text-center">We're way more trustworthy than your cousin Vinny. And we break less cookies.</p>
         </div>
 
         <div className="options-flex">

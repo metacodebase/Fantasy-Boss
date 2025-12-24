@@ -18,11 +18,11 @@ const Step4LeagueType = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
       <div className="step-content">
        <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">League Type</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">League Type</h3>
           <div className="flex justify-center my-6">
-           <img src="/assets/images/league-type.png" className="w-44" alt="league-type" />
+           <img src="/assets/images/league-type.png" className="w-32 lg:w-44" alt="league-type" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">What&apos;s your league type? No judgement.
+          <p className="text-white lg:text-[20px] mb-5 text-center">What&apos;s your league type? No judgement.
              At least not where you can hear us.
           </p>
         </div>

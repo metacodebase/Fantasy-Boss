@@ -74,8 +74,8 @@ const Home = () => {
                 </div>
 
            <div className="flex justify-between bg-[#050608] rounded-[10px] p-4 mt-5">
-            <div className="flex items-center gap-4">
-              <button className="flex items-center justify-center h-7 w-7 rounded-full bg-white text-maindark text-2xl">
+            <div className="flex lg:items-center gap-4">
+              <button className="flex items-center justify-center h-7 min-w-7 rounded-full bg-white text-maindark text-2xl">
                 <iconify-icon icon="ic:baseline-plus"></iconify-icon>
               </button>
               <div>
@@ -133,7 +133,7 @@ const Home = () => {
             <h5 className="text-gray uppercase font-semiboldd mb-4">
               Profile Snapshot
             </h5>
-            <h4 className="text-white text-2xl font-semibold mb-6">Season overview</h4>
+            <h4 className="text-white text-xl lg:text-2xl font-semibold mb-6">Season overview</h4>
 
             {/* Stats Grid */}
             <div className="space-y-4">
@@ -160,7 +160,7 @@ const Home = () => {
             <h4 className="text-gray text-xs uppercase  font-semibold mb-4">
               Go Mobile
             </h4>
-            <h3 className="text-white text-2xl font-semibold mb-4">Play Anywhere</h3>
+            <h3 className="text-white text-xl lg:text-2xl font-semibold mb-4">Play Anywhere</h3>
             <p className="text-gray mb-6">
               Draft, chat, and track scores with the FantasyBoss mobile app
             </p>

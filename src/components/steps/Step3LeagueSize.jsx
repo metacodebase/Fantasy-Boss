@@ -20,11 +20,11 @@ const Step3LeagueSize = ({ leagueData, updateLeagueData, onNext, onBack }) => {
 
       <div className="step-content">
         <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">League Size</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">League Size</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/league-size.png" className="w-44" alt="league-size" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">We&apos;d say size doesn&apos;t matter, but we&apos;d be lying.</p>
+          <p className="text-white lg:text-[20px] mb-5 text-center">We&apos;d say size doesn&apos;t matter, but we&apos;d be lying.</p>
         </div>
 
         <div className="size-grid">

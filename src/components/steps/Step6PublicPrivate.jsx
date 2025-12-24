@@ -23,11 +23,11 @@ const Step6PublicPrivate = ({ leagueData, updateLeagueData, onNext, onBack }) =>
 
       <div className="step-content">
           <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">Public or Private</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Public or Private</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/eye.png" className="w-64" alt="eye" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">  Let&apos;s face it, some things go on the mantle, others get hidden under the bed where grandma won&apos;t find them.</p>
+          <p className="text-white lg:text-[20px] mb-5 text-center">  Let&apos;s face it, some things go on the mantle, others get hidden under the bed where grandma won&apos;t find them.</p>
         </div>
        
 

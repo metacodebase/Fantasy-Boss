@@ -10,7 +10,7 @@ const Step1CreateOrCopy = ({ updateLeagueData, onNext, onClose }) => {
 
       </div>
       <div className="relative">
-        <h3 className="text-[32px] whitespace-nowrap font-bold uppercase absolute text-white left-1/2 top-2 -translate-x-1/2">CREATE OR JOIN A LEAGUE</h3>
+        <h3 className="text-2xl lg:text-[32px] whitespace-nowrap font-bold uppercase absolute text-white left-1/2 top-2 -translate-x-1/2">CREATE OR JOIN A LEAGUE</h3>
        <img src="/assets/images/modal-background.png" className="h-[400px] w-full object-cover" alt="modal-background" />
       </div>
 

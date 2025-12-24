@@ -14,11 +14,11 @@ const Step8LeagueReady = ({ leagueData, onFinish, onBack }) => {
       <div className="step-content">
         <div className="">
       <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">Your League is ready!</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Your League is ready!</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/ready.png" className="w-64" alt="ready" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">Bravo! You’ve proven that even the most mundane tasks can be conquered with enough determination. Now get out there and build a team! Or not. Friends can wait, naps are forever.</p>
+          <p className="text-white lg:text-[20px] mb-5 text-center">Bravo! You’ve proven that even the most mundane tasks can be conquered with enough determination. Now get out there and build a team! Or not. Friends can wait, naps are forever.</p>
         </div>
 
           <div className="flex flex-col gap-2 mb-6 items-center text-xl font-bold text-white">
