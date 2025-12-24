@@ -1,0 +1,205 @@
+/* Trade Zone Tabs */
+.tabs-wrapper {
+  width: 100%;
+}
+/* AntD Tabs Override */
+.scores-tabs {
+  width: 100%;
+}
+.ant-tabs.scores-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #FABA17;
+}
+.ant-tabs.scores-tabs .ant-tabs-ink-bar {
+    background-color: #FABA17;
+}
+.scores-tabs .ant-tabs-nav {
+  background: transparent;
+  border-bottom: none;
+  margin: 0;
+}
+
+.scores-tabs .ant-tabs-nav::before {
+  display: none;
+}
+
+.scores-tabs .ant-tabs-nav-list {
+  gap: 0;
+  display: flex;
+}
+
+.scores-tabs .ant-tabs-tab {
+  padding: 12px 24px;
+  margin: 0;
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  background: transparent;
+  position: relative;
+}
+.ant-tabs.scores-tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+    margin-bottom: 24px;
+}
+
+.scores-tabs .ant-tabs-tab:hover {
+  color: #ffffff;
+}
+
+.scores-tabs .ant-tabs-tab-active {
+  color: #ffffff;
+}
+
+.scores-tabs .ant-tabs-tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+}
+
+.scores-tabs .ant-tabs-content {
+  background: transparent;
+}
+
+/* AntD Draft Board Table Styles */
+.draft-board-wrapper {
+  width: 100%;
+  
+}
+.draft-board-table .ant-table table {
+    border-spacing: 0px 10px !important;
+}
+
+.draft-board-table .ant-table {
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.draft-board-table .ant-table-thead > tr > th {
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #555555;
+  padding: 16px 12px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.draft-board-table .ant-table-thead > tr > th:first-child {
+  text-align: left;
+  padding-left: 6px;
+}
+
+.draft-board-table .ant-table-tbody > tr {
+  border-bottom: 1px solid rgba(255, 255, 255,0.24);
+  transition: background-color 0.2s ease;
+  
+}
+
+.draft-board-table .ant-table-tbody > tr:hover > td {
+  background: transparent !important;
+}
+
+.draft-board-table .ant-table-tbody > tr > td {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255,0.24);
+
+  
+}
+.draft-board-table .ant-table-tbody > tr > td:first-child {
+  padding-left: 16px;
+  text-align: left;
+}
+.draft-board-table .ant-table-tbody > tr > td {
+  padding: 16px 0px !important;
+}
+
+.team-cell {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.stat-cell {
+  color: #FFFFFF;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Hide default borders */
+.draft-board-table .ant-table-cell-row-span {
+  border-right: none;
+}
+
+/* Budgets Styles */
+.budgets-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.budget-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  transition: background-color 0.2s ease;
+}
+
+.budget-row:hover {
+  background: rgba(60, 60, 60, 0.6);
+}
+
+.budget-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 46px;
+  height: 68px;
+}
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.budget-team-info {
+  flex: 0 0 auto;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+ 
+  .draft-board-table .ant-table-thead > tr > th {
+    font-size: 11px;
+    padding: 12px 6px;
+  }
+
+  .draft-board-table .ant-table-tbody > tr > td {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+}

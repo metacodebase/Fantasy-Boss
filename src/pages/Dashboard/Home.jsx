@@ -95,8 +95,8 @@ const Home = () => {
 
           {/* Current Leagues Section */}
           <div className="bg-lightgray rounded-[18px]  p-5 mt-4">
-            <div className="flex justify-between items-center mb-6">
-              <h4 className="text-white text-2xl font-semibold  uppercase">Current Leagues</h4>
+            <div className="flex flex-col lg:flex-row justify-between lg:items-center mb-6">
+              <h4 className="text-white text-lg lg:text-2xl font-semibold  uppercase">Current Leagues</h4>
               <p className="text-gray font-medium">3 active • Next draft in 2 days</p>
             </div>
 

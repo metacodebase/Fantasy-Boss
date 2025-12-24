@@ -32,6 +32,9 @@ import DraftWatchlist from '../pages/Dashboard/PlayerWatchlist/DraftWatchlist'
 import DraftTeams from '../pages/Dashboard/PlayerWatchlist/DraftTeams'
 import TradeZone from '../pages/Dashboard/TradeZone/TradeZone'
 import DraftTradeZone from '../pages/Dashboard/TradeZone/DraftTradeZone'
+import DraftTradeZoneSecond from '../pages/Dashboard/TradeZone/DraftTradeZoneSecond'
+import ScoresNews from '../pages/Dashboard/ScoresNews/ScoresNews'
+import ScoresDraft from '../pages/Dashboard/ScoresNews/ScoresDraft'
 
 
 const AppRoutes = () => {
@@ -57,6 +60,9 @@ const AppRoutes = () => {
           <Route path="/draft-teams" element={<DraftTeams />} />
           <Route path="/trade" element={<TradeZone />} />
           <Route path="/draft-trade" element={<DraftTradeZone />} />
+          <Route path="/draft-trade-second" element={<DraftTradeZoneSecond />} />
+          <Route path="/scores" element={<ScoresNews />} />
+          <Route path="/scores-draft" element={<ScoresDraft />} />
 
 
           <Route path="/league-commissioner" element={<LeagueCommissioner />} />
