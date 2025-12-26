@@ -269,28 +269,28 @@ const PlayerListView = () => {
         </div>
       </div>
       {/* Round */}
-      <div className="bg-lightgray p-5 rounded-[18px] mt-4 flex items-center justify-between">
+      <div className="bg-lightgray p-5 rounded-[18px] mt-4 flex flex-wrap gap-6 lg:gap-0 lg:items-center justify-between">
         <div>
-            <div className="text-lg font-semibold text-gray mb-2">
-                2nd nomination
+            <div className="text-sm lg:text-lg font-semibold text-gray mb-2">
+               2nd nomination
             </div>
-            <p className="font-medium text-lg">
+            <p className="font-medium text-sm lg:text-lg">
                 Round 1 • Pick 1
             </p>
         </div>
         <div>
-            <div className="text-lg font-semibold text-gray mb-2">
+            <div className="text-sm lg:text-lg font-semibold text-gray mb-2">
               Last Pick
             </div>
-            <p className="font-medium text-lg">
+            <p className="font-medium text-sm lg:text-lg">
                 TJ Hokenson - Pick 33
             </p>
         </div>
         <div>
-            <div className="text-lg font-semibold text-gray mb-2">
+            <div className="text-sm lg:text-lg font-semibold text-gray mb-2">
                You Are
             </div>
-            <p className="font-medium text-lg">
+            <p className="font-medium text-sm lg:text-lg">
                Team 1 • Picking Now
             </p>
         </div>
@@ -315,9 +315,9 @@ const PlayerListView = () => {
                       12.3 ADP
                     </div>
                     <div className="absolute -right-5 top-4">
-                      <img src="/assets/images/allen.png" className="h-[152px]" alt="allen" />
+                      <img src="/assets/images/allen.png" className="h-[120px] lg:h-[152px]" alt="allen" />
                     </div>
-                    <button className="rounded-xl bg-[#004B8B] h-[60px] w-[92px] absolute top-1/3 -left-12">QB</button>
+                    <button className="rounded-xl bg-[#004B8B] h-10 w-[62px] lg:h-[60px] lg:w-[92px] absolute top-1/3 -left-4 lg:-left-12">QB</button>
               </div>
             </div>
           </div>
@@ -332,20 +332,20 @@ const PlayerListView = () => {
               {/* Left Column - Draft Section */}
               <Col xs={24} lg={12}>
               <div className="bg-lightgray p-5 rounded-[18px]">
-               <div className="flex justify-between gap-12 mt-6">
+              <div className="flex justify-between gap-4 lg:gap-12 mt-6">
                 <div className="">
-                    <img src="/assets/images/team-logo.png" className="h-[115px] w-24" alt="team-logo" />
+                    <img src="/assets/images/team-logo.png" className="h-[100px] lg:h-[115px] lg:w-24" alt="team-logo" />
                 </div>
                 <div className=" relative">
                     <div className="flex flex-col justify-center items-center gap-2 relative z-20">
-                        <div className="text-sm">
+                        <div className="text-xs lg:text-sm">
                             Time Remaining
                         </div>
-                        <div className="text-6xl">01:59</div>
-                        <div className="text-sm text-gray">
-                            Auto-pick after timer expires
+                        <div className="text-2xl lg:text-6xl">01:59</div>
+                        <div className="text-xs lg:text-sm text-gray text-center lg:text-start">
+                            Auto-pick after <br className="block lg:hidden"/> timer expires
                         </div>
-                    <div className="border border-[#3E3E3E] rounded-md h-20 w-[300px] absolute -top-2"></div>
+                    <div className="border border-[#3E3E3E] rounded-md h-20 w-[250px] lg:w-[300px] absolute -top-2"></div>
                     </div>
                 </div>
                 <div></div>
@@ -423,29 +423,28 @@ const PlayerListView = () => {
                </div>
      {/*  search */}
 
-      <div className="flex items-center gap-2">
-        <div className="relative flex-1 mt-4">
+      <div className="flex lg:gap-2 gap-3 mt-4">
+        <div className="relative flex-1">
           <input
             type="text"
             placeholder="Search players"
-            className="w-full ps-10 pe-4 h-[45px] rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] text-white placeholder-gray focus:outline-none"
+            className="w-full ps-10 pe-4 h-[45px]! rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] text-white placeholder-gray focus:outline-none"
           />
           <span className="absolute left-3 text-xl top-[26px] transform -translate-y-1/2">
            {/* add the search icon here iconify */}
            <iconify-icon icon="mynaui:search"></iconify-icon>
-
           </span>
         </div>
-        <div className="flex items-center justify-center rounded-xl bg-[#F9B816] text-black h-[45px] px-4">
+        <div className="flex items-center justify-center rounded-lg lg:rounded-xl bg-[#F9B816] text-black h-10 px-2 lg:px-4">
           All
         </div>
-        <div className="flex items-center justify-center rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-[45px] px-4">
+        <div className="flex items-center justify-center rounded-lg lg:rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-10 px-2 lg:px-4">
          QB
         </div>
-        <div className="flex items-center justify-center rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-[45px] px-4">
+        <div className="flex items-center justify-center rounded-lg lg:rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-10 px-2 lg:px-4">
          RB
         </div>
-        <div className="flex items-center justify-center rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-[45px] px-4">
+        <div className="flex items-center justify-center rounded-lg lg:rounded-xl bg-linear-to-b border border-[#3E3E3E] from-[#191818] to-[#2E2E2E] h-10 px-2 lg:px-4">
          WR
         </div>
       </div>

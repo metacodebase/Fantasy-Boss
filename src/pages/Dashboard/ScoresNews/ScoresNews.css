@@ -1,0 +1,84 @@
+/* AntD Draft Board Table Styles */
+.draft-board-table .ant-table {
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.draft-board-table .ant-table-container {
+  position: relative;
+}
+
+.draft-board-table .ant-table-thead > tr > th {
+  background: transparent;
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  padding: 16px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.draft-board-table .ant-table-thead > tr > th:last-child {
+  text-align: right;
+}
+
+.draft-board-table .ant-table-tbody > tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  transition: background-color 0.2s ease;
+}
+
+.draft-board-table .ant-table-tbody > tr:hover > td {
+  background: transparent !important;
+}
+
+.draft-board-table .ant-table-tbody > tr > td {
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 16px 12px;
+  border-bottom: none !important;
+}
+
+.draft-board-table .ant-table-tbody > tr > td:last-child {
+  text-align: right;
+}
+
+.draft-board-table .ant-table-cell {
+  padding: 16px 12px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .draft-board-table .ant-table-thead > tr > th {
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+
+  .draft-board-table .ant-table-tbody > tr > td {
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+
+  .draft-board-table .ant-table-cell {
+    padding: 12px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .draft-board-table .ant-table-thead > tr > th {
+    font-size: 11px;
+    padding: 10px 6px;
+  }
+
+  .draft-board-table .ant-table-tbody > tr > td {
+    font-size: 11px;
+    padding: 10px 6px;
+  }
+
+  .draft-board-table .ant-table-cell {
+    padding: 10px 6px !important;
+  }
+}

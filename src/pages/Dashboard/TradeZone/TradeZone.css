@@ -66,3 +66,12 @@
   background: transparent;
 }
 
+@media (max-width: 768px) {
+ .trade-zone-tabs .ant-tabs-tab {
+  padding: 12px 4px;
+  font-weight: 700;
+  font-size: 14px;
+  /* margin-bottom: 14px; */
+  margin: 0px 0px 0px 10px !important;
+}
+}

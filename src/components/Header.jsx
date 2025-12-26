@@ -105,7 +105,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center gap-4 w-full justify-between lg:px-2">
           <Link to="/dashboard" className="flex-1">
-            <img src="/assets/images/small-logo.png" className="h-12 w-auto" alt="dashboard-logo" />
+            <img src="/assets/images/small-logo.png" className="h-10 w-auto" alt="dashboard-logo" />
           </Link>
           <button
             onClick={() => setDrawerOpen(true)}
@@ -121,8 +121,8 @@ const Header = () => {
         title={
           <div className="flex items-center gap-3">
             
-              <Link to="/dashboard" className="flex-1">
-            <img src="/assets/images/dashboard-logo.png" className="h-8 w-auto" alt="dashboard-logo" />
+            <Link to="/dashboard" className="flex-1">
+                    <img src="/assets/images/small-logo.png" className="h-10 w-auto" alt="dashboard-logo" />
           </Link>
           </div>
         }

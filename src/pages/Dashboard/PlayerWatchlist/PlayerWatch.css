@@ -72,7 +72,7 @@
 
 .player-stats-table .ant-table-tbody > tr > td {
   border-bottom: transparent;
-  padding: 8px !important;
+  /* padding: 8px !important; */
   color: #fff;
   vertical-align: middle;
   white-space: nowrap;
@@ -127,7 +127,7 @@
   }
 
   .player-stats-table .ant-table-tbody > tr > td {
-    padding: 10px 6px !important;
+    /* padding: 10px 6px !important; */
     font-size: 12px;
   }
 }
@@ -145,7 +145,7 @@
   }
 
   .player-stats-table .ant-table-tbody > tr > td {
-    padding: 8px 4px !important;
+    /* padding: 8px 4px !important; */
     font-size: 11px;
   }
 
@@ -177,7 +177,7 @@
   }
 
   .player-stats-table .ant-table-tbody > tr > td {
-    padding: 6px 3px !important;
+    /* padding: 6px 3px !important; */
     font-size: 10px;
   }
 }

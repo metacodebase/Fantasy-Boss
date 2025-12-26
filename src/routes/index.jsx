@@ -50,10 +50,10 @@ const AppRoutes = () => {
           <Route path="/auth/verification" element={<Verification />} />
         </Route>
         <Route element={<DashboardLayout />}>
-          <Route path="/dashboard" element={<Home />} />
-          <Route path="/league" element={<League />} />
-          <Route path="/matchups" element={<Matchup />} />
-          <Route path="/players" element={<PlayerWatch />} />
+          <Route path="/dashboard" element={<Home />} />  {/* done */}
+          <Route path="/league" element={<League />} /> {/* done */}
+          <Route path="/matchups" element={<Matchup />} />  {/* done */}
+          <Route path="/players" element={<PlayerWatch />} />  {/* done */}
           <Route path="/player-list-view" element={<PlayerListView />} />
           <Route path="/player-list-view-second" element={<PlayerListViewSecond />} />
           <Route path="/draft-watchlist" element={<DraftWatchlist />} />

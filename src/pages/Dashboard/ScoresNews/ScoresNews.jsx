@@ -1,3 +1,5 @@
+import { Table } from "antd";
+import "./ScoresNews.css";
 
 const ScoresNews = () => {
   const draftData = {
@@ -31,6 +33,32 @@ const ScoresNews = () => {
     ]
   };
 
+  // Table columns configuration
+  const columns = [
+    {
+      title: "Pick #",
+      dataIndex: "pick",
+      key: "pick",
+      align: "left",
+      width: 100,
+      render: (text) => <span className="text-white text-base font-bold ms-2">{text}</span>,
+    },
+    {
+      title: "Player",
+      dataIndex: "player",
+      key: "player",
+      align: "left",
+      render: (text) => <span className="text-white text-base font-bold">{text}</span>,
+    },
+    {
+      title: "Team",
+      dataIndex: "team",
+      key: "team",
+      align: "right",
+      render: (text) => <span className="text-white text-base font-bold">{text}</span>,
+    },
+  ];
+
   return (
     <div>
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-6">
@@ -62,45 +90,25 @@ const ScoresNews = () => {
               {/* Round Title */}
               <div className="flex items-center gap-2">
                   <h6 className="font-semibold text-base md:text-lg text-[#FABA17]">Round {roundData.round}</h6>
-                  <div className="h-px flex-1 w-full bg-[rgba(255,255,255,0.24)] "></div>
+                  <div className="h-px flex-1 w-full bg-[rgba(255,255,255,0.24)]"></div>
               </div>
 
               {/* Desktop Table View */}
-              <div className="hidden md:block overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="">
-                      <th className="text-left py-3 px-4 text-gray font-semibold">Pick #</th>
-                      <th className="text-left py-3 px-4 text-gray font-semibold">Player</th>
-                      <th className="text-right py-3 px-4 text-gray font-semibold">Team</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {roundData.picks.map((pick, index) => (
-                      <tr key={index} className=" transition-colors">
-                        <td className="py-3 px-4 text-white text-base font-bold">{pick.pick}</td>
-                        <td className="py-3 px-4 text-white text-base font-bold">{pick.player}</td>
-                        <td className="py-3 px-4 text-white text-base font-bold text-right">{pick.team}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div className="md:block mt-4">
+                <Table
+                  columns={columns}
+                  dataSource={roundData.picks.map((pick, index) => ({
+                    ...pick,
+                    key: index,
+                  }))}
+                  pagination={false}
+                  className="draft-board-table"
+                  bordered={false}
+                  size="small"
+                />
               </div>
 
-              {/* Mobile Card View */}
-              <div className="md:hidden space-y-2">
-                {roundData.picks.map((pick, index) => (
-                  <div key={index} className="bg-[#2a2a2a] border border-gray-700 rounded-lg p-3 flex justify-between items-center">
-                    <div className="flex-1">
-                      <p className="py-3 px-4 text-gray font-semibold mb-1">Pick #{pick.pick}</p>
-                      <p className="text-white text-base font-bold">{pick.player}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-white text-base font-bold text-right">{pick.team}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+          
             </div>
           ))}
         </div>
