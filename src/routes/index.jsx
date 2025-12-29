@@ -74,10 +74,10 @@ const AppRoutes = () => {
           <Route path="/league-price" element={<LeaguePrice />} /> {/* done */}
           <Route path="/side-pool" element={<SidePool />} /> {/* done */}
           <Route path="/position-limits" element={<PositionLimits />} />  {/* done */}
-          <Route path="/position-limits-second" element={<PositionLimitsSecond />} />
-          <Route path="/league-create" element={<LeagueCreate />} />
-          <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />
-          <Route path="/divisions" element={<Divisions />} />
+          <Route path="/position-limits-second" element={<PositionLimitsSecond />} /> {/* done */}
+          <Route path="/league-create" element={<LeagueCreate />} />  {/* done */}
+          <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />  {/* done */}
+          <Route path="/divisions" element={<Divisions />} />   {/* done */}
           <Route path="/trading-playoff" element={<TradingPlayoff />} />
           <Route path="/keeper-settings" element={<KeeperSettings />} />
 

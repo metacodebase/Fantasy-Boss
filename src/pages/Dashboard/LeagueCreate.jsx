@@ -98,7 +98,7 @@ const LeagueCreate = () => {
             </div>
 
             {/* League Settings Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {leagueSettings.map((setting, index) => (
                 <div key={index} className="flex flex-col">
                   <span className="text-white font-semibold text-sm  mb-2">
@@ -140,7 +140,7 @@ const LeagueCreate = () => {
               </div>
 
               {/* Divisions Content */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 {divisions.map((div, index) => (
                   <div key={index} className="flex flex-col">
                     <span className="text-white font-semibold text-sm mb-2">
@@ -190,7 +190,7 @@ const LeagueCreate = () => {
             </div>
 
             {/* Trading & Playoffs Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {tradingPlayoffs.map((item, index) => (
                 <div key={index} className="flex flex-col">
                   <span className="text-white font-semibold text-sm mb-2">

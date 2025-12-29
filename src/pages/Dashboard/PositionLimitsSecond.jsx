@@ -39,18 +39,18 @@ const PositionLimitsSecond = () => {
         </div>
       </div>
       <div className="bg-lightgray p-5 rounded-[18px]">
-       <div className="flex items-center justify-between">
-        <div className="font-semibold text-2xl">Total Roster Spots: 15</div>
-        <div className="bg-[#050608] py-1 px-4 rounded-full">Include starters + bench (not IR)</div>
+       <div className="flex lg:items-center justify-between flex-col lg:flex-row gap-4">
+        <div className="font-semibold text-xl lg:text-2xl">Total Roster Spots: 15</div>
+        <span className="bg-[#050608] py-1 px-4 rounded-full text-sm lg:text-base text-center lg:text-start">Include starters + bench (not IR)</span>
        </div>
        <div className="grid lg:grid-cols-3 gap-4 mt-4">
             <div></div>
         <div className="font-semibold text-lg text-gray mx-auto">Starting Spots</div>
-        <div className="font-semibold text-lg text-gray ms-auto me-10">Total Allowed</div>
+        <div className="font-semibold text-lg text-gray text-center lg:text-right lg:ms-auto">Total Allowed</div>
        </div>
        {positions.map((position) => (
          <div key={position.id} className="grid lg:grid-cols-3 gap-4 mt-6">
-          <div className={`font-semibold text-lg ${position.isRed ? "text-[#FF0000]" : ""}`}>{position.name}</div>
+          <div className={`font-semibold text-lg text-center lg:text-start ${position.isRed ? "text-[#FF0000]" : ""}`}>{position.name}</div>
           <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] mx-auto">
               <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
                <iconify-icon icon="rivet-icons:minus"></iconify-icon>
@@ -61,7 +61,7 @@ const PositionLimitsSecond = () => {
               </button>
           </div>
           {position.totalAllowed && (
-            <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] ms-auto">
+            <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] lg:ms-auto mx-auto lg:mx-0">
                 <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
                  <iconify-icon icon="rivet-icons:minus"></iconify-icon>
                 </button>
@@ -73,17 +73,17 @@ const PositionLimitsSecond = () => {
           )}
          </div>
        ))}
-      <div className="text-2xl font-medium my-6">
+      <div className="text-xl lg:text-2xl font-medium my-6">
         For Individuals Players on defense (IDP) leagues
       </div>
       <div className="grid lg:grid-cols-3 gap-4 mt-4">
-        <div className="text-lg font-semibold text-gray">Defense Positions</div>
+        <div className="text-lg font-semibold text-gray text-center lg:text-start">Defense Positions</div>
         <div className="text-lg font-semibold text-gray text-center">How many starting spots for each?</div>
-        <div className="text-lg font-semibold text-gray ms-auto ">Total allowed on roster?</div>
+        <div className="font-semibold text-lg text-gray text-center lg:text-right lg:ms-auto">Total allowed on roster?</div>
       </div>
       {idpPositions.map((position) => (
         <div key={position.id} className="grid lg:grid-cols-3 gap-4 mt-6">
-          <div className="font-semibold text-lg">{position.name}</div>
+          <div className="font-semibold text-lg text-center lg:text-start">{position.name}</div>
           <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] mx-auto">
               <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
                <iconify-icon icon="rivet-icons:minus"></iconify-icon>
@@ -94,7 +94,7 @@ const PositionLimitsSecond = () => {
               </button>
           </div>
           {position.totalAllowed && (
-            <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] ms-auto">
+            <div className="border border-[#E5CD71] bg-[rgba(0,0,0,0.65)] p-1 flex items-center justify-between rounded-4xl w-[200px] lg:ms-auto mx-auto lg:mx-0">
                 <button className="h-8 w-8 flex items-center justify-center rounded-full bg-[#f9b816] text-secondgray">
                  <iconify-icon icon="rivet-icons:minus"></iconify-icon>
                 </button>

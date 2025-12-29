@@ -21,7 +21,7 @@ const LeagueTieBeakers = () => {
       </div>
          <div className="bg-lightgray p-5 rounded-[18px]">
          <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-2xl mb-4">
+            <div className="font-semibold text-xl lg:text-2xl">
              Use Tiebreakers
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
@@ -32,7 +32,7 @@ const LeagueTieBeakers = () => {
                 </div>
                 <p className="text-gray mb-4">Rank priority from 1st (highest) to 4th (lowest)</p>
             <div className="flex flex-col">
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Most Fantasy Points for season
                     </div>
@@ -43,7 +43,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Lowest Fantasy Points Against
                     </div>
@@ -54,7 +54,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Most wins entire season
                     </div>
@@ -65,7 +65,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Record vs Team tied with
                     </div>
@@ -85,7 +85,7 @@ const LeagueTieBeakers = () => {
                 </div>
                 <p className="text-gray mb-4">Rank priority from 1st (highest) to 4th (lowest)</p>
             <div className="flex flex-col">
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Best Bench / Reserve Players
                     </div>
@@ -96,7 +96,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Home Team Wins
                     </div>
@@ -107,7 +107,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Highest Individual Starter Score
                     </div>
@@ -118,7 +118,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Highest Individual Starter Score
                     </div>
@@ -129,7 +129,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">4</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Most Offensive + Special Teams TDS
                     </div>
@@ -149,7 +149,7 @@ const LeagueTieBeakers = () => {
                 </div>
                 <p className="text-gray mb-4">Rank priority from 1st (highest) to 5th (lowest)</p>
             <div className="flex flex-col">
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        High Seed
                     </div>
@@ -161,7 +161,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">5</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Record vs Team tied with
                     </div>
@@ -173,7 +173,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">5</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Best Bench vs Reserve Players
                     </div>
@@ -185,7 +185,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">5</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Home Team Wins
                     </div>
@@ -197,7 +197,7 @@ const LeagueTieBeakers = () => {
                         <button className="bg-transparent border border-secondgray h-[38px] w-12 rounded-[5px] text-base! text-white">5</button>
                     </div>
                 </div>
-                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+                <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        MOST POINTS GAME Over Season
                     </div>

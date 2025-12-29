@@ -20,14 +20,14 @@ const Divisions = () => {
         </div>
       </div>
          <div className="bg-lightgray p-5 rounded-[18px]">
-         <h4 className="font-semibold text-2xl mb-6">Divisions Configuration</h4>
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+         <h4 className="font-semibold text-xl lg:text-2xl mb-6">Divisions Configuration</h4>
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
             <div className="font-semibold text-lg">
             Use Divisions?
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
-           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
               <div>
                 <div className="font-semibold">
                     Number of Divisions
@@ -49,25 +49,25 @@ const Divisions = () => {
               </button>
               </div>
             </div>
-           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
              <div className="font-semibold">
                 League Name
              </div>
               <div className="flex items-center gap-2">
-                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-2 flex items-center justify-center text-white font-medium">
+                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-1 lg:py-2 flex items-center justify-center text-white font-medium">
                     ACF North
                    </div>
-                      <button className="h-9 md:h-10 w-9 md:w-10 bg-[#404040] rounded-full flex items-center justify-center text-yellow hover:bg-[#4a4a4a] transition-colors flex-shrink-0">
+                      <button className="h-9 md:h-10 w-9 md:w-10 bg-[#404040] rounded-full flex items-center justify-center text-yellow hover:bg-[#4a4a4a] transition-colors shrink-0">
                 <iconify-icon icon="entypo:pencil" className="text-lg md:text-xl"></iconify-icon>
               </button>
               </div>
             </div>
-           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
              <div className="font-semibold">
                 League Name
              </div>
               <div className="flex items-center gap-2">
-                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-2 flex items-center justify-center text-white font-medium">
+                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-1 lg:py-2 flex items-center justify-center text-white font-medium">
                    ACF South
                    </div>
                       <button className="h-9 md:h-10 w-9 md:w-10 bg-[#404040] rounded-full flex items-center justify-center text-yellow hover:bg-[#4a4a4a] transition-colors flex-shrink-0">
@@ -75,12 +75,12 @@ const Divisions = () => {
               </button>
               </div>
             </div>
-           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
              <div className="font-semibold">
                 League Name
              </div>
               <div className="flex items-center gap-2">
-                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-2 flex items-center justify-center text-white font-medium">
+                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-1 lg:py-2 flex items-center justify-center text-white font-medium">
                   ACF East
                    </div>
                       <button className="h-9 md:h-10 w-9 md:w-10 bg-[#404040] rounded-full flex items-center justify-center text-yellow hover:bg-[#4a4a4a] transition-colors flex-shrink-0">
@@ -88,12 +88,12 @@ const Divisions = () => {
               </button>
               </div>
             </div>
-           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
              <div className="font-semibold">
                 League Name
              </div>
               <div className="flex items-center gap-2">
-                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-2 flex items-center justify-center text-white font-medium">
+                   <div className="border border-[#FAB717] rounded-lg w-[120px] py-1 lg:py-2 flex items-center justify-center text-white font-medium">
                   ACF West
                    </div>
                       <button className="h-9 md:h-10 w-9 md:w-10 bg-[#404040] rounded-full flex items-center justify-center text-yellow hover:bg-[#4a4a4a] transition-colors flex-shrink-0">
