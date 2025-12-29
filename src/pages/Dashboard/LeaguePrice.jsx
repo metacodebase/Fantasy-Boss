@@ -8,7 +8,7 @@ const LeaguePrice = () => {
     <div>
        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-6">
         <div>
-          <h4 className="font-semibold text-lg md:text-2xl text-white">Marks League</h4>
+          <h4 className="font-semibold lg:text-lg md:text-2xl text-white">Marks League</h4>
           <p className="text-gray text-sm md:text-base font-medium mt-1">
        Draft Settings - Main Prize Payout
           </p>
@@ -24,43 +24,43 @@ const LeaguePrice = () => {
       </div>
       <div className="bg-lightgray p-5 rounded-[18px] mt-4">
      
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row lg:items-center justify-between">
+            <div className="font-semibold lg:text-lg mb-2 lg:mb-4">
             Enable Side Prize Pool
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $4
               </div>
         </div>
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row lg:items-center justify-between">
+            <div className="font-semibold lg:text-lg mb-2 lg:mb-4">
           Side Pool Buy In
             </div>
-              <button onClick={() => setSettingsModalOpen(true)}  className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <button onClick={() => setSettingsModalOpen(true)}  className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $25
               </button>
         </div>
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row lg:items-center justify-between">
+            <div className="font-semibold lg:text-lg mb-2 lg:mb-4">
           Side Pool Buy In
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $125
               </div>
         </div>
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row lg:items-center justify-between">
+            <div className="font-semibold lg:text-lg mb-2 lg:mb-4">
           Side Pool Buy In
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $25
               </div>
         </div>
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row lg:items-center justify-between">
+            <div className="font-semibold lg:text-lg mb-2 lg:mb-4">
           Side Pool Buy In
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $125
               </div>
         </div>

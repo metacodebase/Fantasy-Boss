@@ -54,26 +54,26 @@ const AppRoutes = () => {
           <Route path="/league" element={<League />} /> {/* done */}
           <Route path="/matchups" element={<Matchup />} />  {/* done */}
           <Route path="/players" element={<PlayerWatch />} />  {/* done */}
-          <Route path="/player-list-view" element={<PlayerListView />} />
-          <Route path="/player-list-view-second" element={<PlayerListViewSecond />} />
-          <Route path="/draft-watchlist" element={<DraftWatchlist />} />
-          <Route path="/draft-teams" element={<DraftTeams />} />
-          <Route path="/trade" element={<TradeZone />} />
-          <Route path="/draft-trade" element={<DraftTradeZone />} />
-          <Route path="/draft-trade-second" element={<DraftTradeZoneSecond />} />
-          <Route path="/scores" element={<ScoresNews />} />
-          <Route path="/scores-draft" element={<ScoresDraft />} />
+          <Route path="/player-list-view" element={<PlayerListView />} /> {/* done */}
+          <Route path="/player-list-view-second" element={<PlayerListViewSecond />} /> {/* done */}
+          <Route path="/draft-watchlist" element={<DraftWatchlist />} /> {/* done */}
+          <Route path="/draft-teams" element={<DraftTeams />} />  {/* done */}
+          <Route path="/trade" element={<TradeZone />} /> {/* done */}
+          <Route path="/draft-trade" element={<DraftTradeZone />} />  {/* done */}
+          <Route path="/draft-trade-second" element={<DraftTradeZoneSecond />} />  {/* done */}
+          <Route path="/scores" element={<ScoresNews />} /> {/* done */}
+          <Route path="/scores-draft" element={<ScoresDraft />} />  {/* done */}
 
 
-          <Route path="/league-commissioner" element={<LeagueCommissioner />} />
-          <Route path="/league-commissioner-second" element={<LeagueCommissionerSecond />} />
-          <Route path="/league-draft-setting" element={<LeagueDraftSetting />} />
-          <Route path="/league-draft-setting-second" element={<LeagueDraftSettingSecond />} />
-          <Route path="/league-draft-setting-third" element={<LeagueDraftSettingThird />} />
-          <Route path="/league-fees" element={<LeagueFees />} />
-          <Route path="/league-price" element={<LeaguePrice />} />
-          <Route path="/side-pool" element={<SidePool />} />
-          <Route path="/position-limits" element={<PositionLimits />} />
+          <Route path="/league-commissioner" element={<LeagueCommissioner />} />  {/* done */}
+          <Route path="/league-commissioner-second" element={<LeagueCommissionerSecond />} />   {/* done */}
+          <Route path="/league-draft-setting" element={<LeagueDraftSetting />} />   {/* done */}
+          <Route path="/league-draft-setting-second" element={<LeagueDraftSettingSecond />} /> {/* done */}
+          <Route path="/league-draft-setting-third" element={<LeagueDraftSettingThird />} />  {/* done */}
+          <Route path="/league-fees" element={<LeagueFees />} /> {/* done */}
+          <Route path="/league-price" element={<LeaguePrice />} /> {/* done */}
+          <Route path="/side-pool" element={<SidePool />} /> {/* done */}
+          <Route path="/position-limits" element={<PositionLimits />} />  {/* done */}
           <Route path="/position-limits-second" element={<PositionLimitsSecond />} />
           <Route path="/league-create" element={<LeagueCreate />} />
           <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />

@@ -42,7 +42,7 @@ const LeagueCommissionerSecond = () => {
                 {/* Action Buttons */}
                 <div className="flex flex-col justify-between h-full gap-4 mb-8">
                   {/* Set-up Avatar Button */}
-                  <button className="bg-lightgray rounded-2xl border border-[#7B7B7B] px-3 py-5 flex items-center justify-between h-full transition-colors group">
+                  <button className="bg-lightgray rounded-2xl border border-[#7B7B7B] px-3 py-2 lg:py-5 flex items-center justify-between h-full transition-colors group">
                     <div className="flex items-center gap-2">
                         <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-3xl">
                           <iconify-icon
@@ -65,7 +65,7 @@ const LeagueCommissionerSecond = () => {
                   </button>
 
                   {/* Edit Settings Button */}
-                  <button onClick={() => setSettingsModalOpen(true)}  className="bg-lightgray  rounded-2xl border border-[#7B7B7B] px-3 py-5 flex items-center justify-between h-full transition-colors group">
+                  <button onClick={() => setSettingsModalOpen(true)}  className="bg-lightgray  rounded-2xl border border-[#7B7B7B] px-3 py-2 lg:py-5 flex items-center justify-between h-full transition-colors group">
                     <div className="flex items-center gap-2">
                         <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C9A621] text-3xl">
                           <iconify-icon

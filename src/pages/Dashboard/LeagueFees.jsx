@@ -24,8 +24,8 @@ const LeagueFees = () => {
               Use FantasyBoss to collect league fees?
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">yes</button>
-                <button className="yellow-outline-button h-10 text-base!">No</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">yes</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">No</button>
           
             </div>
         </div>
@@ -34,8 +34,8 @@ const LeagueFees = () => {
           Require Payment before joining league?
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">yes</button>
-                <button className="yellow-outline-button h-10 text-base!">No</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">yes</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">No</button>
           
             </div>
         </div>
@@ -44,15 +44,15 @@ const LeagueFees = () => {
             Enable Side Prize Pool
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">yes</button>
-                <button className="yellow-outline-button h-10 text-base!">No</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">yes</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">No</button>
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
             <div className="font-semibold text-lg mb-4">
             Enable Side Prize Pool
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $100
               </div>
         </div>
@@ -60,7 +60,7 @@ const LeagueFees = () => {
             <div className="font-semibold text-lg mb-4">
           Side Pool Buy In
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $25
               </div>
         </div>
@@ -68,7 +68,7 @@ const LeagueFees = () => {
             <div className="font-semibold text-lg mb-4">
           Side Pool Buy In
             </div>
-              <div className="border border-yellow rounded-md h-12 w-[102px] flex items-center justify-center text-xl font-medium">
+              <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
                 $125
               </div>
         </div>

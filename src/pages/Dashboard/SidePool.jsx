@@ -31,12 +31,12 @@ const SidePool = () => {
           <div key={item.id}>
             {/* Duration Section */}
             <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4">
-              <div className="font-semibold text-lg mb-4">
+              <div className="font-semibold lg:text-lg mb-4">
                 {item.title} - Duration
               </div>
-              <div className="flex items-center gap-4">
-                <button className="bg-[#050608] rounded-md border h-[74px] w-full border-yellow flex items-center px-4 text-white gap-4">
-                  <span className="bg-[#3B3B3B] h-10 w-10 text-[#C0A172] text-2xl rounded-md flex items-center justify-center">
+              <div className="flex items-center flex-wrap md:flex-nowrap gap-4">
+                <button className="bg-[#050608] rounded-md border text-sm lg:text-base h-12 lg:h-[74px] w-full border-yellow flex items-center px-4 text-white gap-4">
+                  <span className="bg-[#3B3B3B] h-6 lg:h-10 w-8 lg:w-10 text-[#C0A172] lg:text-2xl rounded-md flex items-center justify-center">
                     <iconify-icon icon="mdi:calendar-month"></iconify-icon>
                   </span>
                   <div className="h-10 w-0.5 bg-secondgray"></div>
@@ -45,8 +45,8 @@ const SidePool = () => {
                     <div className="text-sm font-medium">Week 1</div>
                   </div>
                 </button>
-                <button className="bg-[#050608] rounded-md border h-[74px] w-full border-yellow flex items-center px-4 text-white gap-4">
-                  <span className="bg-[#3B3B3B] h-10 w-10 text-[#C0A172] text-2xl rounded-md flex items-center justify-center">
+                <button className="bg-[#050608] rounded-md border text-sm lg:text-base h-12 lg:h-[74px] w-full border-yellow flex items-center px-4 text-white gap-4">
+                  <span className="bg-[#3B3B3B] h-6 lg:h-10 w-8 lg:w-10 text-[#C0A172] lg:text-2xl rounded-md flex items-center justify-center">
                     <iconify-icon icon="mdi:calendar-month"></iconify-icon>
                   </span>
                   <div className="h-10 w-0.5 bg-secondgray"></div>
@@ -60,11 +60,11 @@ const SidePool = () => {
 
             {/* Payout Section */}
             <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4">
-              <div className="flex items-center justify-between">
-                <div className="font-semibold text-lg">
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-0">
+                <div className="font-semibold lg:text-lg">
                   {item.title} - Payout
                 </div>
-                <div className="border border-yellow rounded-md h-12 w-20 flex items-center justify-center text-xl font-medium text-white">
+                <div className="border border-yellow rounded-md  h-8 lg:h-12 w-20 flex items-center justify-center lg:text-xl font-medium text-white">
                   {item.payout}
                 </div>
               </div>

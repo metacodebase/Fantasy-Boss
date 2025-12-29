@@ -107,7 +107,7 @@ const ScoresDraft = () => {
                 <div className="avatar-circle"><img src={item.avatar} alt="avatar" /></div>
               </div>
               <div className="budget-team-info">
-                <h6 className="text-base font-bold text-[#FBFBFB]">{item.team}</h6>
+                <h6 className="text-sm lg:text-base font-bold text-[#FBFBFB]">{item.team}</h6>
                 <p className="font-medium text-[#FBFBFB]">{item.drafted}<br/><span className="text-sm text-[#8B8484]">Drafted</span></p>
               </div>
           </div>
@@ -116,13 +116,13 @@ const ScoresDraft = () => {
 
           {/* Center Info */}
           <div className="">
-            <p className="text-base font-medium text-[#FBFBFB]">{item.avg}</p>
+            <p className="text-sm lg:text-base font-medium text-[#FBFBFB]">{item.avg}</p>
           </div>
 
           {/* Right Info */}
           <div className="text-right">
-            <p className="text-base font-bold text-[#FBFBFB]">{item.spent}</p>
-            <p className="text-base font-medium text-[#FBFBFB]">{item.max}<br/><span className="text-sm text-[#8B8484]">Remaining budget per player</span></p>
+            <p className="text-sm lg:text-base font-bold text-[#FBFBFB]">{item.spent}</p>
+            <p className="text-sm lg:text-base font-medium text-[#FBFBFB]">{item.max}<br/><span className="text-sm text-[#8B8484]">Remaining budget per player</span></p>
           </div>
         </div>
       ))}

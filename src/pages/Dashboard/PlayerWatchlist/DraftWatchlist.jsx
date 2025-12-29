@@ -88,7 +88,7 @@ const DraftWatchlist = () => {
       flex: 1,
       align: 'center',
       render: (text) => (
-        <div className="text-sm text-center">{text}</div>
+        <div className="text-xs lg:text-sm text-center">{text}</div>
       ),
     },
     {
@@ -120,7 +120,7 @@ const DraftWatchlist = () => {
           <h5 className="font-semibold text-lg text-white">Watchlist</h5>
           <p className="text-gray text-sm">Last Pick TJ Hockenson - Pick 33</p>
         </div>
-          <h5 className="text-center font-semibold text-lg text-white">Watchlist</h5>
+          <h5 className="text-start lg:text-center font-semibold text-lg text-white">Watchlist</h5>
 
         <Table
           columns={columns}

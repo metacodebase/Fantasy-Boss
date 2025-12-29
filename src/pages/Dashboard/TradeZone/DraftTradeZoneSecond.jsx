@@ -19,25 +19,25 @@ const DraftTradeZoneSecond = () => {
           
           <div className="flex items-center">
             <div className="flex-1 h-px bg-secondgray"></div>
-            <button className="text-yellow bg-black text-xl px-6 py-2 rounded-full whitespace-nowrap">
+            <button className="text-yellow bg-black text-lg lg:text-xl px-6 py-1 lg:py-2 rounded-full whitespace-nowrap">
               Your Team
             </button>
             <div className="flex-1 h-px bg-secondgray"></div>
           </div>
 
           <div className="flex items-center justify-between">
-            <div className="text-gray text-lg">
+            <div className="text-gray lg:text-lg">
               Trades Away
             </div>
-            <div className="text-gray text-lg">
+            <div className="text-gray lg:text-lg">
               Receive Back
             </div>
           </div>
-          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between">
+          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-0">
             {/* Trade Card 1 */}
          
               {/* Left Side - Trading Away */}
-              <div className="flex-1 w-full md:w-auto">
+              <div className="flex-1 w-full md:w-auto text-center md:text-left">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -47,11 +47,11 @@ const DraftTradeZoneSecond = () => {
 
               {/* Center - Team Avatar */}
               
-               <img src="/assets/images/multiple-person-logo.png" className="w-16 h-16 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
+               <img src="/assets/images/multiple-person-logo.png" className="w-10 h-12 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
          
 
               {/* Right Side - Receive Back */}
-              <div className="flex-1 w-full md:w-auto text-left md:text-right">
+              <div className="flex-1 w-full md:w-auto text-center md:text-right">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -60,12 +60,12 @@ const DraftTradeZoneSecond = () => {
               </div>
            
              </div>
-          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between">
+          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-0">
             
             {/* Trade Card 2 */}
        
               {/* Left Side */}
-              <div className="flex-1 w-full md:w-auto">
+              <div className="flex-1 w-full md:w-auto text-center md:text-left">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -75,13 +75,13 @@ const DraftTradeZoneSecond = () => {
 
               {/* Center - Team Avatar */}
               
-                             <img src="/assets/images/multiple-person-logo.png" className="w-16 h-16 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
+                             <img src="/assets/images/multiple-person-logo.png" className="w-10 h-12 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
 
               
             
 
               {/* Right Side */}
-              <div className="flex-1 w-full md:w-auto text-left md:text-right">
+              <div className="flex-1 w-full md:w-auto text-center md:text-right">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -90,12 +90,12 @@ const DraftTradeZoneSecond = () => {
               </div>
           
             </div>
-          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between">
+          <div className="bg-linear-to-b from-lightgray to-[#393939] p-4 rounded-[18px] border border-[#404040] mt-6 flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-0">
 
             {/* Trade Card 3 */}
           
               {/* Left Side */}
-              <div className="flex-1 w-full md:w-auto">
+              <div className="flex-1 w-full md:w-auto text-center md:text-left">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -105,13 +105,13 @@ const DraftTradeZoneSecond = () => {
 
               {/* Center - Team Avatar */}
               <div className="flex flex-col items-center gap-2">
-                             <img src="/assets/images/multiple-person-logo.png" className="w-16 h-16 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
+                             <img src="/assets/images/multiple-person-logo.png" className="w-10 h-12 md:w-[68px] md:h-[100px]" alt="multiple-person-logo" />
 
                
               </div>
 
               {/* Right Side */}
-              <div className="flex-1 w-full md:w-auto text-left md:text-right">
+              <div className="flex-1 w-full md:w-auto text-center md:text-right">
                 <p className="text-xs md:text-sm font-medium mb-2">DeSeán Jackson</p>
                 <p className="text-gray text-xs md:text-sm mb-1">WR 7 - BAL 156pts</p>
                 <p className="text-xs md:text-sm mb-2">DeSeán Jackson</p>
@@ -122,7 +122,7 @@ const DraftTradeZoneSecond = () => {
          </div>
          <div className="text-center text-[#CCCCCC] text-sm my-4">Trade Offer Expires automatically after draft is over OR if a pick or player above is no longer available.</div>
          <div className="flex flex-col gap-4">
-          <div className="text-lg font-medium">Send Note</div>
+          <div className="lg:text-lg font-medium">Send Note</div>
           <textarea
             className="w-full bg-[#363636] text-white p-3 rounded-lg h-[100px] resize-none border border-[#555555] focus:outline-none focus:border-yellow placeholder:text-gray"
             placeholder="Add an optional note to managers in this trade..."

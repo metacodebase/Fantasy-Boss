@@ -92,7 +92,7 @@ const DraftTeams = () => {
         </div>
         
         <div className="flex items-center justify-between">
-          <h5 className="font-semibold text-lg text-white flex-1 text-center">Teams</h5>
+          <h5 className="font-semibold lg:text-lg text-white flex-1 text-center">Teams</h5>
           <div className="flex items-center gap-2">
             <span className="text-gray text-xs font-medium">FILTER</span>
             <img src="/assets/images/sheild.png" className="h-5 w-5" alt="filter" />

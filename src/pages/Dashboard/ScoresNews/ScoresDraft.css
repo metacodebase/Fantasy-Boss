@@ -202,4 +202,8 @@
     font-size: 12px;
     padding: 10px 6px;
   }
+  .avatar-circle {
+  width: 36px;
+  height: 50px;
+  }
 }

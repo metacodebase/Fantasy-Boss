@@ -23,7 +23,7 @@ const LeagueCommissioner = () => {
                     ]} >
                 <Col xs={24} lg={10}>
                 <div className="bg-lightgray rounded-[18px] p-5 h-full">
-                    <h4 className="font-semibold text-2xl mb-4">Complete Setup</h4>
+                    <h4 className="font-semibold text-xl lg:text-2xl mb-4">Complete Setup</h4>
                     <p className="text-gray text-sm font-medium mb-4">You're almost done. Invite friends and lock in your draft settings.</p>
                     <p className="text-gray text-sm font-medium mb-4">Your league is open, but some details are missing. Use defaults to get started or fine tune  everything.</p>
                     <div className="flex items-center gap-2">

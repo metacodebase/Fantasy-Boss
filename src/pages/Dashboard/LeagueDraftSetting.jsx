@@ -80,7 +80,7 @@ const LeagueDraftSetting = () => {
             </div>
 
             {/* Draft Settings Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {draftSettings.map((setting, index) => (
                 <div key={index} className="flex flex-col">
                   <span className="text-white font-semibold text-sm  mb-2">
@@ -165,7 +165,7 @@ const LeagueDraftSetting = () => {
             </div>
 
             {/* Prize Payout Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <div className="flex flex-col">
                 <span className="text-white font-semibold text-sm mb-2">
                   Paid Spots
@@ -318,7 +318,7 @@ const LeagueDraftSetting = () => {
             </div>
 
             {/* Rosters & Waivers Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-4">
               {rostersWaivers.map((item, index) => (
                 <div key={index} className="flex flex-col">
                   <span className="text-white font-semibold text-sm mb-2">

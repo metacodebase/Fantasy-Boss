@@ -118,6 +118,9 @@
   .watchlist-container {
     padding: 15px;
   }
+  .draft-teams-table .ant-table-thead > tr > th {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {

@@ -5,7 +5,7 @@ const LeagueDraftSettingSecond = () => {
     <div>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-6">
         <div>
-          <h4 className="font-semibold text-lg md:text-2xl text-white">Marks League</h4>
+          <h4 className="font-semibold lg:text-lg md:text-2xl text-white">Marks League</h4>
           <p className="text-gray text-sm md:text-base font-medium mt-1">
            Draft Settings - Options
           </p>
@@ -19,35 +19,35 @@ const LeagueDraftSettingSecond = () => {
           </button>
         </div>
       </div>
-      <div className="font-medium text-xl text-[#ff0000] mb-4">
+      <div className="font-medium text-sm lg:text-xl text-[#ff0000] mb-4">
         DO NOT INCLUDE: please note, the Draft Options shouldn’t be allowed to be changed 30 minutes of draft settings
       </div>
       {/* draft time */}
       <div className="bg-lightgray p-5 rounded-[18px]">
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
                 Draft Time
             </div>
-            <div className="flex items-center gap-2">
-                <button className="bg-[#050608] rounded-md border h-[74px] w-full border-dashed border-yellow flex items-center justify-center text-white">NOT SET</button>
-                <button className="bg-[#050608] rounded-md border h-[74px] w-full border-yellow flex items-center justify-center text-white gap-4">
-                    <span className="bg-[#3B3B3B] h-10 w-10 text-[#C0A172] text-2xl rounded-md flex items-center justify-center">
+            <div className="flex items-center flex-wrap md:flex-nowrap gap-4">
+                <button className="bg-[#050608] rounded-md border text-sm lg:text-base h-12 lg:h-[74px] w-full border-dashed border-yellow flex items-center justify-center text-white">NOT SET</button>
+                <button className="bg-[#050608] rounded-md border text-sm lg:text-base h-12 lg:h-[74px] w-full border-yellow flex items-center justify-center text-white gap-4">
+                    <span className="bg-[#3B3B3B] h-6 lg:h-10 w-8 lg:w-10 text-[#C0A172] lg:text-2xl rounded-md flex items-center justify-center">
                     <iconify-icon icon="mdi:calendar-month"></iconify-icon>
                     </span> Set Time</button>
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
               Draft Type
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">snake</button>
-                <button className="yellow-outline-button h-10 text-base!">Linear</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">snake</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">Linear</button>
           
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-1">
+            <div className="font-semibold lg:text-lg mb-1">
                   Third Round Reversal?
             </div>
             <div className="font-medium text-base mb-1">
@@ -57,33 +57,33 @@ const LeagueDraftSettingSecond = () => {
                 NOTE TO DEV:  ONLY APPEARS IF SNAKE IS SELECTED. 
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">yes</button>
-                <button className="yellow-outline-button h-10 text-base!">no</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">yes</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">no</button>
           
             </div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
             Available Players to draft
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">All</button>
-                <button className="yellow-outline-button h-10 text-base!">ROOKIES</button>
-                <button className="yellow-outline-button h-10 text-base!">VETS</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">All</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">ROOKIES</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">VETS</button>
           
             </div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
         Include Minor League Player In Pool?
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">YES</button>
-                <button className="yellow-outline-button h-10 text-base!">NO</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">YES</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">NO</button>
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
                  Time Per Pick
             </div>
             <div className="flex items-center gap-2">
@@ -97,44 +97,44 @@ const LeagueDraftSettingSecond = () => {
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
             CPU Auto Pick?
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
         Undrafted Players Go TO:
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">WAIVERS</button>
-                <button className="yellow-outline-button h-10 text-base!">FREE AGENTS</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">WAIVERS</button>
+                <button className="yellow-outline-button h-8 lg:h-10 lg:text-base!">FREE AGENTS</button>
             </div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
            Player Sorting?
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
          Allow Trades During Draft?
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
              <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
        Override Invite Capacity?
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
          <div className=" pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
         Undrafted Players Go TO:
             </div>
             <div className="flex items-center gap-2">
-                <button className="yellow-button h-10 text-base!">RESET</button>
+                <button className="yellow-button h-8 lg:h-10 lg:text-base!">RESET</button>
             </div>
         </div>
       </div>
