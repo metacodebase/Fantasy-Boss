@@ -20,7 +20,7 @@ const TradingPlayoff = () => {
         </div>
       </div>
     <div className="bg-lightgray p-5 rounded-[18px]">
-            <h4 className="font-semibold text-2xl mb-4 text-white">Trading & Playoffs Configuration</h4>
+            <h4 className="font-semibold text-xl lg:text-2xl mb-4 text-white">Trading & Playoffs Configuration</h4>
          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
             <div className="text-white">
             Allow Trades
@@ -28,7 +28,7 @@ const TradingPlayoff = () => {
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Trade Deadline
                     </div>
@@ -42,7 +42,7 @@ const TradingPlayoff = () => {
                     </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Trade Deadline
                     </div>
@@ -56,7 +56,7 @@ const TradingPlayoff = () => {
                     </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Trade Review Time
                     </div>
@@ -73,13 +73,13 @@ const TradingPlayoff = () => {
               Trade Veto System
             </div>
             <div className="flex items-center gap-2">
-                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">TRADE SNIPER</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">VETO</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">NONE</button>
+                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base! text-black font-semibold">TRADE SNIPER</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base! font-semibold">VETO</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base! font-semibold">NONE</button>
             </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Trade Vote Needed to Veto
                     </div>
@@ -91,21 +91,21 @@ const TradingPlayoff = () => {
                     </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
             <div className="text-white">
             Use Playoffs
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
             <div className="text-white">
             Prevent Non Playoff teams from making moves
             </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        # of Playoff Teams
                     </div>
@@ -121,14 +121,14 @@ const TradingPlayoff = () => {
             <div className="text-white mb-4">
               How long should each playoff matchup last?
             </div>
-            <div className="flex items-center gap-2">
-                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">1 WEEK + FINALS</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">1 WEEK + FINALS 2WKS</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">2 WEEKS + FINALS</button>
+            <div className="flex items-center flex-wrap md:flex-nowrap gap-2">
+                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base! text-black font-semibold">1 WEEK + FINALS</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base!  font-semibold">1 WEEK + FINALS 2WKS</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base!  font-semibold">2 WEEKS + FINALS</button>
             </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
                     <div className="text-white">
                        Playoff Start Week
                     </div>
@@ -140,7 +140,7 @@ const TradingPlayoff = () => {
                     </div>
         </div>
 
-        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between">
+        <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:items-center justify-between">
             <div className="text-white">
             Playoff Seeding
             </div>
@@ -151,10 +151,10 @@ const TradingPlayoff = () => {
             <div className="text-white mb-4">
               Losers Bracket
             </div>
-            <div className="flex items-center gap-2">
-                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 h-10 rounded-full text-base! text-black font-semibold">NONE</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">POOP BOWL</button>
-                <button className="border border-yellow-500 px-4 h-10 rounded-full text-base!  font-semibold">CONSULTATION BOWL</button>
+            <div className="flex items-center flex-wrap md:flex-nowrap gap-2">
+                <button className="bg-linear-to-b from-[#FAAC15] to-[#F9D81B] px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base! text-black font-semibold">NONE</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base!  font-semibold">POOP BOWL</button>
+                <button className="border border-yellow-500 px-4 rounded-full h-8 lg:h-10 text-sm lg:text-base!  font-semibold">CONSULTATION BOWL</button>
             </div>
         </div>
     </div>

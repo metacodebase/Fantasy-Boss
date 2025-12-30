@@ -20,11 +20,11 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           {/* Draft Time & Type Row */}
           <div className="grid grid-cols-3 gap-4 mb-4">
             <div className="col-span-2">
-              <div className="text-lg text-white mb-1">Draft Time</div>
+              <div className="lg:text-lg text-white mb-1">Draft Time</div>
               <p className="font-medium text-[#C9A621]">Not Set!</p>
             </div>
             <div>
-              <div className="text-lg text-white mb-1">Draft Type</div>
+              <div className="lg:text-lg text-white mb-1">Draft Type</div>
               <p className="font-medium text-gray">Snake</p>
             </div>
           </div>
@@ -32,11 +32,11 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           {/* Time per Pick & Rounds Row */}
           <div className="grid grid-cols-3 gap-4">
             <div className="col-span-2">
-              <div className="text-lg text-white mb-1">Time per Pick</div>
+              <div className="lg:text-lg text-white mb-1">Time per Pick</div>
               <p className="font-medium text-gray">2 min</p>
             </div>
             <div>
-              <div className="text-lg text-white mb-1">Rounds</div>
+              <div className="lg:text-lg text-white mb-1">Rounds</div>
               <p className="font-medium text-gray">15</p>
             </div>
           </div>
@@ -49,18 +49,18 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           {/* Teams & Draft Type Row */}
           <div className="grid grid-cols-3 gap-4 mb-4">
           <div className="col-span-2">
-              <div className="text-lg text-white mb-1"># Teams</div>
+              <div className="lg:text-lg text-white mb-1"># Teams</div>
               <p className="font-medium text-gray">10 (6)</p>
             </div>
             <div>
-              <div className="text-lg text-white mb-1">Draft Type</div>
+              <div className="lg:text-lg text-white mb-1">Draft Type</div>
               <p className="font-medium text-gray">Snake</p>
             </div>
           </div>
 
           {/* Team Info */}
           <div className="mb-4">
-            <div className="text-lg text-white mb-1">Team</div>
+            <div className="lg:text-lg text-white mb-1">Team</div>
             <p className="font-medium text-gray text-sm">
               1QB, 2RB, 3WR, 1TE, 2FLEX, (W/R/T), 1K, 1DEF, 5BN
             </p>
@@ -69,11 +69,11 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           {/* Team Playoffs Row */}
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <div className="text-lg text-white mb-1">Team Playoffs</div>
+              <div className="lg:text-lg text-white mb-1">Team Playoffs</div>
               <p className="font-medium text-gray">2 min</p>
             </div>
             <div>
-              <div className="text-lg text-white mb-1">Team Playoffs</div>
+              <div className="lg:text-lg text-white mb-1">Team Playoffs</div>
               <p className="font-medium text-gray">6, Starts Week 15</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           
           {/* Scoring Type */}
           <div className="mb-4">
-            <div className="text-lg text-white mb-1">Scoring</div>
+            <div className="lg:text-lg text-white mb-1">Scoring</div>
             <p className="font-medium text-gray">Fantasy Boss Standard</p>
           </div>
 

@@ -17,7 +17,7 @@ const Step3NameTeam = ({ joinData, updateJoinData, onBack, onFinish }) => {
     <div className="placeholder"></div>
       </div>
          <div className="">
-         <h3 className="text-white text-[32px] font-bold text-center">Name Your Team</h3>
+         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Name Your Team</h3>
           <div className="flex justify-center my-6">
            <img src="/assets/images/ready.png" className="w-64" alt="ready" />
           </div>

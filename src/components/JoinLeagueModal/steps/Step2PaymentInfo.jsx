@@ -38,7 +38,7 @@ const Step2PaymentInfo = ({ joinData, updateJoinData, onNext, onBack }) => {
         {/* Payment Amount */}
         <div className="">
           <div className="font-medium text-lg">Payment amount</div>
-          <div className="text-[44px] text-[#C9A621]">$10</div>
+          <div className="text-2xl lg:text-[44px] text-[#C9A621]">$10</div>
         </div>
 
         {/* Form Fields */}

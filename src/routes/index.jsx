@@ -78,8 +78,8 @@ const AppRoutes = () => {
           <Route path="/league-create" element={<LeagueCreate />} />  {/* done */}
           <Route path="/league-tie-breakers" element={<LeagueTieBeakers />} />  {/* done */}
           <Route path="/divisions" element={<Divisions />} />   {/* done */}
-          <Route path="/trading-playoff" element={<TradingPlayoff />} />
-          <Route path="/keeper-settings" element={<KeeperSettings />} />
+          <Route path="/trading-playoff" element={<TradingPlayoff />} />  {/* done */}
+          <Route path="/keeper-settings" element={<KeeperSettings />} /> {/* done */}
 
         </Route>
 
