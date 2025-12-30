@@ -15,7 +15,7 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
         
         {/* Draft Summary Section */}
         <div>
-          <h3 className="font-bold text-xl text-white my-5">Draft Summary</h3>
+          <h3 className="font-bold lg:text-xl text-white my-5">Draft Summary</h3>
           
           {/* Draft Time & Type Row */}
           <div className="grid grid-cols-3 gap-4 mb-4">
@@ -44,7 +44,7 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
 
         {/* League Summary Section */}
         <div>
-          <h3 className="font-bold text-xl text-white my-5">League Summary</h3>
+          <h3 className="font-bold lg:text-xl text-white my-5">League Summary</h3>
           
           {/* Teams & Draft Type Row */}
           <div className="grid grid-cols-3 gap-4 mb-4">
@@ -67,7 +67,7 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
           </div>
 
           {/* Team Playoffs Row */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div>
               <div className="lg:text-lg text-white mb-1">Team Playoffs</div>
               <p className="font-medium text-gray">2 min</p>
@@ -81,7 +81,7 @@ const Step1JoinLeague = ({ joinData, updateJoinData, onNext, onClose }) => {
 
         {/* Scoring Summary Section */}
         <div>
-          <h3 className="font-bold text-xl text-white my-5">Scoring Summary</h3>
+          <h3 className="font-bold lg:text-xl text-white my-5">Scoring Summary</h3>
           
           {/* Scoring Type */}
           <div className="mb-4">

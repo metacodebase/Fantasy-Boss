@@ -21,8 +21,8 @@ const AuthLayout = () => {
       </div>
 
       {/* Right Side - Dynamic Content with Outlet */}
-      <div className="w-full lg:w-1/2 lg:ml-auto overflow-y-auto flex items-center justify-center py-8 px-8 lg:px-12 min-h-screen">
-        <div className='w-full max-w-[550px] bg-lightgray rounded-4xl p-8'>
+      <div className="w-full lg:w-1/2 lg:ml-auto overflow-y-auto small-bg flex items-center justify-center py-8 px-8 lg:px-12 min-h-screen">
+        <div className='w-full max-w-[550px] bg-lightgray  rounded-4xl p-8 z-10'>
           <Outlet />
         </div>
       </div>

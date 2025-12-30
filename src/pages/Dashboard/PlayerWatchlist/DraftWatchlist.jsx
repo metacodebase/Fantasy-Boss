@@ -116,19 +116,22 @@ const DraftWatchlist = () => {
         </div>
       </div>
       <div className="bg-linear-to-b border border-secondgray from-[#191818] to-[#2E2E2E] rounded-[18px] p-5 watchlist-container">
-        <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.24)] pb-4 mb-4">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between border-b border-[rgba(255,255,255,0.24)] pb-4 mb-4">
           <h5 className="font-semibold text-lg text-white">Watchlist</h5>
-          <p className="text-gray text-sm">Last Pick TJ Hockenson - Pick 33</p>
+          <p className="text-gray text-xs lg:text-sm">Last Pick TJ Hockenson - Pick 33</p>
         </div>
           <h5 className="text-start lg:text-center font-semibold text-lg text-white">Watchlist</h5>
 
-        <Table
-          columns={columns}
-          dataSource={watchlistData}
-          pagination={false}
-          className="watchlist-table"
-          bordered={false}
-        />
+        <div className="overflow-x-auto overflow-y-hidden">
+          <Table
+            columns={columns}
+            dataSource={watchlistData}
+            pagination={false}
+            className="watchlist-table"
+            bordered={false}
+            style={{ minWidth: '500px' }}
+          />
+        </div>
       </div>
     </div>
   )

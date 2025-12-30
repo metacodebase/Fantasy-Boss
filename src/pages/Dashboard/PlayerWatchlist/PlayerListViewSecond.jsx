@@ -308,8 +308,8 @@ const PlayerListViewSecond = () => {
               {/* Left Column - Draft Section */}
               <Col xs={24} lg={12}>
               <div className="bg-lightgray p-5 rounded-[18px]">
-               <div className="flex justify-between gap-6 lg:gap-20 mt-6">
-                <div className="md:min-w-32">
+               <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-20 mt-6">
+                <div className="md:min-w-32 mx-auto lg:mx-0 flex items-center flex-col gap-2">
                     <img src="/assets/images/team-logo.png" className="h-[100px] lg:h-[115px] lg:min-w-24" alt="team-logo" />
                     <div className="font-semibold text-center lg:text-start">Team 1 Picking</div>
                 </div>
@@ -320,8 +320,8 @@ const PlayerListViewSecond = () => {
                       245 Proj Pts <br />
                       12.3 ADP
                     </div>
-                    <div className="absolute -right-2 top-5.5">
-                      <img src="/assets/images/allen.png" className="h-[102px]" alt="allen" />
+                    <div className="absolute -right-1 lg:-right-6 top-5 lg:top-7">
+                      <img src="/assets/images/allen.png" className="h-[102px] lg:h-[140px]" alt="allen" />
                     </div>
                     <button className="rounded-xl bg-[#004B8B] h-10 w-[62px] lg:h-[60px] lg:w-[92px] absolute top-1/3 -left-4 lg:-left-12">QB</button>
               </div>
@@ -427,7 +427,7 @@ const PlayerListViewSecond = () => {
       </div>
 
         <div className="player-watch-wrapper mt-6">
-          <div className="flex items-center justify-between mb-4 px-5">
+          <div className="flex items-center justify-between mb-4">
             <div className="table-container-wrapper relative">
               <Tabs
                       activeKey={activeTab}
@@ -470,7 +470,7 @@ const PlayerListViewSecond = () => {
                         },
                       ]}
                     />
-                    <button onClick={() => setSettingsModalOpen(true)} className="absolute top-0 right-0 flex border border-yellow items-center gap-2 px-4 py-2 rounded-full"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
+                    <button onClick={() => setSettingsModalOpen(true)} className="absolute top-0 right-0 flex border border-yellow items-center gap-1 lg:gap-2 px-2 lg:px-4 py-2 rounded-full text-xs lg:text-base"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
             </div>
 
           </div>
@@ -493,7 +493,7 @@ const PlayerListViewSecond = () => {
       >
                <div className="flex items-center justify-between my-4">
             <div className="w-6"></div>
-                        <h2 className="text-center font-bold text-2xl">Draft Settings</h2>
+                        <h2 className="text-center font-bold text-xl lg:text-2xl">Draft Settings</h2>
                  <button onClick={() => setSettingsModalOpen(false)} className=" text-white w-6 text-2xl">
                    <iconify-icon icon="gridicons:cross"></iconify-icon>
                  </button>
@@ -520,7 +520,7 @@ const PlayerListViewSecond = () => {
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
      
-        <button className="yellow-button w-full h-[52px]">DONE</button>
+        <button className="yellow-button w-full h-10 lg:h-[52px]">DONE</button>
     
                </Modal>
 

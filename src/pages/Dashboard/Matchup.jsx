@@ -230,9 +230,17 @@ const Matchup = () => {
         }
       ],
       centerStats: {
-        position: "RB",
-        difference: -10,
-        total: 35,
+    
+        difference: (
+          <><div className="flex flex-col">
+             <div>B</div>
+             <div>E</div>
+             <div>N</div>
+             <div>C</div>
+             <div>H</div>
+            </div></>
+        ),
+   
         bgColor: "bg-[#CF3E3E]"
       },
       rightPlayers: [

@@ -172,7 +172,7 @@ const Header = () => {
             onClick={() => setDrawerOpen(false)}
             className="mt-2 border-t border-[#3E3E3E] px-4 py-2 rounded-full text-white bg-lightgray w-28 ms-4"
           >
-            <span className="flex-1">LOG OUT</span>
+            <Link to="/dashboard" className="flex-1 text-sm text-white!">LOG OUT</Link>
             
           </button>
         </nav>

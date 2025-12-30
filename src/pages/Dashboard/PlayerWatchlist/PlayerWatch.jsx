@@ -312,7 +312,7 @@ const PlayerWatch = () => {
                         <div className="text-xs lg:text-sm text-gray text-center lg:text-start">
                             Auto-pick after <br className="block lg:hidden"/> timer expires
                         </div>
-                    <div className="border border-[#3E3E3E] rounded-md h-20 w-[250px] lg:w-[300px] absolute -top-2"></div>
+                    <div className=" border border-[#3E3E3E] rounded-md h-20 min-w-[180px] lg:w-[300px] absolute -top-2 -z-10"></div>
                     </div>
                 </div>
                 <div></div>
@@ -415,7 +415,7 @@ const PlayerWatch = () => {
       </div>
 
         <div className="player-watch-wrapper mt-6">
-          <div className="flex items-center justify-between mb-4 px-5">
+          <div className="flex items-center justify-between mb-4">
             <div className="table-container-wrapper relative">
               <Tabs
                       activeKey={activeTab}
@@ -458,7 +458,7 @@ const PlayerWatch = () => {
                         },
                       ]}
                     />
-                    <button onClick={() => setSettingsModalOpen(true)} className="absolute top-0 right-0 flex border border-yellow items-center gap-2 px-4 py-2 rounded-full"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
+                    <button onClick={() => setSettingsModalOpen(true)} className="absolute top-0 right-0 flex border border-yellow items-center gap-1 lg:gap-2 px-2 lg:px-4 py-2 rounded-full text-xs lg:text-base"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
             </div>
 
           </div>
@@ -481,7 +481,7 @@ const PlayerWatch = () => {
       >
                <div className="flex items-center justify-between my-4">
             <div className="w-6"></div>
-                        <h2 className="text-center font-bold text-2xl">Filter</h2>
+                        <h2 className="text-center font-bold text-xl lg:text-2xl">Filter</h2>
                  <button onClick={() => setSettingsModalOpen(false)} className=" text-white w-6 text-2xl">
                    <iconify-icon icon="gridicons:cross"></iconify-icon>
                  </button>
@@ -500,7 +500,7 @@ const PlayerWatch = () => {
                 </div>
             <div><Switch className="custom-switch" defaultChecked  /></div>
         </div>
-          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 flex items-center justify-between mb-6">
+          <div className="border-b border-[rgba(255,255,255,0.24)] pb-6 mt-4 gap-8 lg:gap-0 flex items-center justify-between mb-6">
         
                 <div className="">
                 Year
@@ -515,7 +515,7 @@ const PlayerWatch = () => {
               </button>
           </div>
         </div>
-        <button className="yellow-button w-full">DONE</button>
+        <button className="yellow-button w-full h-10 lg:h-auto">DONE</button>
     
       </Modal>
     </div>

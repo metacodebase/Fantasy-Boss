@@ -4,7 +4,7 @@ const LeagueFees = () => {
     <div>
     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-6">
         <div>
-          <h4 className="font-semibold text-lg md:text-2xl text-white">Marks League</h4>
+          <h4 className="font-semibold lg:text-lg md:text-2xl text-white">Marks League</h4>
           <p className="text-gray text-sm md:text-base font-medium mt-1">
         Draft Settings - Fees
           </p>
@@ -20,7 +20,7 @@ const LeagueFees = () => {
       </div>
       <div className="bg-lightgray p-5 rounded-[18px] mt-4">
           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
               Use FantasyBoss to collect league fees?
             </div>
             <div className="flex items-center gap-2">
@@ -30,7 +30,7 @@ const LeagueFees = () => {
             </div>
         </div>
           <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
           Require Payment before joining league?
             </div>
             <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ const LeagueFees = () => {
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
             Enable Side Prize Pool
             </div>
             <div className="flex items-center gap-2">
@@ -49,7 +49,7 @@ const LeagueFees = () => {
             </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
             Enable Side Prize Pool
             </div>
               <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
@@ -57,7 +57,7 @@ const LeagueFees = () => {
               </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
           Side Pool Buy In
             </div>
               <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">
@@ -65,7 +65,7 @@ const LeagueFees = () => {
               </div>
         </div>
         <div className="border-b border-[rgba(255,255,255,0.24)] pb-3 mt-4 flex items-center justify-between">
-            <div className="font-semibold text-lg mb-4">
+            <div className="font-semibold lg:text-lg mb-4">
           Side Pool Buy In
             </div>
               <div className="border border-yellow rounded-md h-8 lg:h-12 w-[102px] flex items-center justify-center lg:text-xl font-medium">

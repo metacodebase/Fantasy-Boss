@@ -21,7 +21,7 @@ const Step7CollectFees = ({ leagueData, updateLeagueData, onNext, onBack }) => {
           <div className="">
          <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Use FantasyBoss to collect League fees?</h3>
           <div className="flex justify-center my-6">
-           <img src="/assets/images/collect.png" className="w-64" alt="collect fees" />
+           <img src="/assets/images/collect.png" className="w-36 lg:w-64" alt="collect fees" />
           </div>
           <p className="text-white lg:text-[20px] mb-5 text-center">We're way more trustworthy than your cousin Vinny. And we break less cookies.</p>
         </div>
@@ -32,8 +32,8 @@ const Step7CollectFees = ({ leagueData, updateLeagueData, onNext, onBack }) => {
             onClick={() => handleSelectFees(true)}
             className={`type-option extra-type-opition ${leagueData.collectFees === true ? "active" : ""}`}
           >
-            <img src="/assets/images/dollar.png" className="w-20" alt="dollar" />
-            <button className="yellow-button h-[32px] w-[140px] mt-4">YES</button>
+            <img src="/assets/images/dollar.png" className="lg:w-20" alt="dollar" />
+            <button className="yellow-button h-8 w-[140px] mt-4">YES</button>
           </button>
 
           {/* No Option */}
@@ -41,9 +41,9 @@ const Step7CollectFees = ({ leagueData, updateLeagueData, onNext, onBack }) => {
             onClick={() => handleSelectFees(false)}
             className={`type-option extra-type-opition ${leagueData.collectFees === false ? "active" : ""}`}
           >
-            <img src="/assets/images/box.png" className="w-20" alt="box" />
+            <img src="/assets/images/box.png" className="lg:w-20" alt="box" />
 
-            <button className="yellow-outline-button h-[32px] w-[140px] mt-4">NO</button>
+            <button className="yellow-outline-button h-8 w-[140px] mt-4">NO</button>
           </button>
         </div>
             <div className="flex justify-center mt-4">

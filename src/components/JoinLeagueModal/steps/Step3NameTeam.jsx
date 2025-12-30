@@ -13,15 +13,15 @@ const Step3NameTeam = ({ joinData, updateJoinData, onBack, onFinish }) => {
         <button onClick={onBack} className="text-white text-3xl">
           <iconify-icon icon="mdi:chevron-left"></iconify-icon>
         </button>
-        <h4 className="text-2xl font-bold text-white">Welcome</h4>
+        <h4 className="text-xl lg:text-2xl font-bold text-white">Welcome</h4>
     <div className="placeholder"></div>
       </div>
          <div className="">
-         <h3 className="text-white text-2xl lg:text-[32px] font-bold text-center">Name Your Team</h3>
+         <h3 className="text-white text-xl lg:text-[32px] font-bold text-center">Name Your Team</h3>
           <div className="flex justify-center my-6">
-           <img src="/assets/images/ready.png" className="w-64" alt="ready" />
+           <img src="/assets/images/ready.png" className="w-44 lg:w-64" alt="ready" />
           </div>
-          <p className="text-white text-[20px] mb-5 text-center">Now that the money’s on the nightstand, get in there and show ‘em who’s boss. Name your team and get in the game.</p>
+          <p className="text-white text-sm lg:text-[20px] mb-5 text-center">Now that the money’s on the nightstand, get in there and show ‘em who’s boss. Name your team and get in the game.</p>
         </div>
 
       <div >

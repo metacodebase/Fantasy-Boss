@@ -20,7 +20,7 @@ const Forgotpassword = () => {
         <button className="yellow-button mt-5">Send Otp</button>
           <div className="text-whtie font-medium text-center lg:text-[16px]">
 
-          By continuing, you agree to the FantasyBoss <br className="hidden lg:block"/> <Link className="text-[#FAAF16]" to="/terms-of-service">Terms of Service</Link> and acknowledge that you have read our <Link className="text-[#FAAF16]" to="/privacy-policy">Privacy Policy</Link>.
+          By continuing, you agree to the FantasyBoss <br className="hidden lg:block"/> <Link className="text-[#FAAF16]" to="/">Terms of Service</Link> and acknowledge that you have read our <Link className="text-[#FAAF16]" to="/">Privacy Policy</Link>.
           </div>
 
       </form>

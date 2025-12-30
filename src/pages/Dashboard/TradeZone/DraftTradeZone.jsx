@@ -99,7 +99,7 @@ const DraftTradeZone = () => {
 
           </span>
         </div>
-        <div className="flex items-center gap-2 mt-5">
+        <div className="flex items-center flex-wrap gap-2 mt-5">
                <div className="flex items-center justify-center rounded-xl bg-[#F9B816] text-black h-[45px] w-12 px-4">
           QB
         </div>
@@ -193,10 +193,10 @@ const DraftTradeZone = () => {
           </div>
         </div>
              <div className="flex flex-col gap-4 justify-center mt-12">
-            <button  className="yellow-button h-[52px]">
+            <button  className="yellow-button h-10 lg:h-[52px]">
               Select Players to trade
             </button>
-            <button  className="yellow-outline-button h-[52px]">
+            <button  className="yellow-outline-button h-10 lg:h-[52px]">
               Add Another Team
             </button>
           </div>

@@ -250,14 +250,14 @@ const League = () => {
                       {/* Team 1 Box */}
                       <div className="flex-1 border border-yellow rounded-xl px-3 py-3 hover:bg-[#252525] transition-colors">
                         <div className="flex items-center gap-2 md:gap-3">
-                          <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-3xl">
+                          <div className="lg:w-[42px] w-8 h-8 lg:h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-xl lg:text-3xl">
                       <iconify-icon
                         icon="mdi:account"
                         className=""
                       ></iconify-icon>
                     </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-white font-semibold text-sm md:text-base">
+                            <div className="text-white font-semibold text-xs md:text-base">
                               {match.team1}
                             </div>
                             <div className="text-gray text-xs md:text-sm">
@@ -285,7 +285,7 @@ const League = () => {
                               {match.score2}
                             </div>
                           </div>
-                             <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-3xl">
+                             <div className="lg:w-[42px] w-8 h-8 lg:h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-xl lg:text-3xl">
                       <iconify-icon
                         icon="mdi:account"
                         className=""

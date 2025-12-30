@@ -308,14 +308,14 @@ const PlayerListView = () => {
                 <div className="font-medium">:15 Remaining</div>
               </div>
               <div className="flex justify-between items-center border border-[#3E3E3E] rounded-xl p-5 mt-6 relative">
-                    <div className="font-medium md:text-2xl ms-16">
+                    <div className="font-medium text-sm md:text-2xl ms-10 lg:ms-16">
                       J. Allen <br />
                       BUF <br />
                       245 Proj Pts <br />
                       12.3 ADP
                     </div>
-                    <div className="absolute -right-5 top-4">
-                      <img src="/assets/images/allen.png" className="h-[120px] lg:h-[152px]" alt="allen" />
+                    <div className="absolute -right-4 lg:-right-5 top-2 lg:top-4">
+                      <img src="/assets/images/allen.png" className="h-[110px] lg:h-[152px]" alt="allen" />
                     </div>
                     <button className="rounded-xl bg-[#004B8B] h-10 w-[62px] lg:h-[60px] lg:w-[92px] absolute top-1/3 -left-4 lg:-left-12">QB</button>
               </div>
@@ -345,7 +345,7 @@ const PlayerListView = () => {
                         <div className="text-xs lg:text-sm text-gray text-center lg:text-start">
                             Auto-pick after <br className="block lg:hidden"/> timer expires
                         </div>
-                    <div className="border border-[#3E3E3E] rounded-md h-20 w-[250px] lg:w-[300px] absolute -top-2"></div>
+                    <div className="border border-[#3E3E3E] rounded-md h-20 min-w-[180px] lg:w-[300px] absolute -top-2 -z-10"></div>
                     </div>
                 </div>
                 <div></div>
@@ -450,7 +450,7 @@ const PlayerListView = () => {
       </div>
 
         <div className="player-watch-wrapper mt-6">
-          <div className="flex items-center justify-between mb-4 px-5">
+          <div className="flex items-center justify-between mb-4">
             <div className="table-container-wrapper relative">
               <Tabs
                       activeKey={activeTab}
@@ -493,7 +493,7 @@ const PlayerListView = () => {
                         },
                       ]}
                     />
-                    <button className="absolute top-0 right-0 flex border border-yellow items-center gap-2 px-4 py-2 rounded-full"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
+                    <button className="absolute top-0 right-0 flex border border-yellow items-center gap-1 lg:gap-2 px-2 lg:px-4 py-2 rounded-full text-xs lg:text-base"><iconify-icon icon="mingcute:transfer-4-line"></iconify-icon> Sort by</button>
             </div>
 
           </div>

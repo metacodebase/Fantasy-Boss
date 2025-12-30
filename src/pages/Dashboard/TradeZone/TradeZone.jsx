@@ -7,16 +7,16 @@ const TradeZone = () => {
 
   const proposeTradeContent = (
     <div>
-      <div className="flex items-center justify-between gap-12 lg:gap-24">
+      <div className="flex items-center justify-between gap-7 lg:gap-24">
         {/* Left Side - Your Trade */}
         <div className="flex flex-col gap-4 w-full">
           {/* Player Card */}
           <div className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-4">
-            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="lg:h-[157px] lg:w-[181px]" />
+            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="h-[100px] lg:h-[157px] lg:w-[181px]" />
             <div className="">
               <p className="font-medium text-white text-sm lg:text-base text-center lg:text-start">Lamar Jackson</p>
-              <div className=" flex items-center justify-center lg:justify-start gap-2 mt-2">
-                <button className="bg-[#004B8B] rounded-full w-10 h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
+              <div className=" flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-2 mt-2">
+                <button className="bg-[#004B8B] rounded-full w-full h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
                 <div className="text-yellow text-sm font-semibold">Team 7</div>
               </div>
             </div>
@@ -34,11 +34,11 @@ const TradeZone = () => {
          <div className="flex flex-col gap-4 w-full">
           {/* Player Card */}
           <div className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-4">
-            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="lg:h-[157px] lg:w-[181px]" />
+            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="h-[100px] lg:h-[157px] lg:w-[181px]" />
             <div className="">
               <p className="font-medium text-white text-sm lg:text-base text-center lg:text-start">Lamar Jackson</p>
-              <div className=" flex items-center justify-center lg:justify-start gap-2 mt-2">
-                <button className="bg-[#004B8B] rounded-full w-10 h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
+              <div className=" flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-2 mt-2">
+                <button className="bg-[#004B8B] rounded-full w-full h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
                 <div className="text-yellow text-sm font-semibold">Team 7</div>
               </div>
             </div>
@@ -48,7 +48,7 @@ const TradeZone = () => {
       
         </div>
       </div>
-      <div className="flex items-center justify-between gap-12 lg:gap-24 mt-6">
+      <div className="flex items-center justify-between gap-7 lg:gap-24 mt-6">
          <button className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-2 justify-center items-center text-white mt-2 border border-[#404040] text-sm lg:text-xl font-medium w-full">
             <iconify-icon icon="mdi:plus"></iconify-icon>
             Select Player
@@ -79,16 +79,16 @@ const TradeZone = () => {
 
   const tradingBlockContent = (
    <div>
-      <div className="flex items-center justify-between gap-12 lg:gap-24">
+      <div className="flex items-center justify-between gap-7 lg:gap-24">
         {/* Left Side - Your Trade */}
         <div className="flex flex-col gap-4 w-full">
           {/* Player Card */}
           <div className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-4">
-            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="lg:h-[157px] lg:w-[181px]" />
+            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="h-[100px] lg:h-[157px] lg:w-[181px]" />
             <div className="">
               <p className="font-medium text-white text-sm lg:text-base text-center lg:text-start">Lamar Jackson</p>
-              <div className=" flex items-center justify-center lg:justify-start gap-2 mt-2">
-                <button className="bg-[#004B8B] rounded-full w-10 h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
+              <div className=" flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-2 mt-2">
+                <button className="bg-[#004B8B] rounded-full w-full h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
                 <div className="text-yellow text-sm font-semibold">Team 7</div>
               </div>
             </div>
@@ -106,11 +106,11 @@ const TradeZone = () => {
          <div className="flex flex-col gap-4 w-full">
           {/* Player Card */}
           <div className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-4">
-            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="lg:h-[157px] lg:w-[181px]" />
+            <img src="/assets/images/person-big.png" alt="Lamar Jackson" className="h-[100px] lg:h-[157px] lg:w-[181px]" />
             <div className="">
               <p className="font-medium text-white text-sm lg:text-base text-center lg:text-start ">Lamar Jackson</p>
-              <div className=" flex items-center justify-center lg:justify-start gap-2 mt-2">
-                <button className="bg-[#004B8B] rounded-full w-10 h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
+              <div className=" flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-2 mt-2">
+                <button className="bg-[#004B8B] rounded-full w-full h-8 lg:h-[33px] lg:w-[70px] text-white flex items-center justify-center text-sm font-bold">QB</button>
                 <div className="text-yellow text-sm font-semibold">Team 7</div>
               </div>
             </div>
@@ -120,7 +120,7 @@ const TradeZone = () => {
       
         </div>
       </div>
-      <div className="flex items-center justify-between gap-12 lg:gap-24 mt-6">
+      <div className="flex items-center justify-between gap-7 lg:gap-24 mt-6">
          <button className="bg-linear-to-b from-lightgray via-[#333333] to-[#484848] rounded-[14px] p-5 flex flex-col gap-2 justify-center items-center text-white mt-2 border border-[#404040] text-sm lg:text-xl font-medium w-full">
             <iconify-icon icon="mdi:plus"></iconify-icon>
             Select Player

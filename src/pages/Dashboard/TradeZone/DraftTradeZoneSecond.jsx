@@ -128,7 +128,7 @@ const DraftTradeZoneSecond = () => {
             placeholder="Add an optional note to managers in this trade..."
           ></textarea>
           <div className="flex justify-center">
-            <button className="yellow-button h-[52px]! w-full">
+            <button className="yellow-button h-10 lg:h-[52px]! w-full">
              Send Proposal
             </button>
           </div>

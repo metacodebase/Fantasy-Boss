@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AuthLayout from '../Layouts/AuthLayout'
 import Signup from '../pages/Auth/Signup'
 import Forgotpassword from '../pages/Auth/Forgotpassword'
@@ -35,6 +35,7 @@ import DraftTradeZone from '../pages/Dashboard/TradeZone/DraftTradeZone'
 import DraftTradeZoneSecond from '../pages/Dashboard/TradeZone/DraftTradeZoneSecond'
 import ScoresNews from '../pages/Dashboard/ScoresNews/ScoresNews'
 import ScoresDraft from '../pages/Dashboard/ScoresNews/ScoresDraft'
+import NotFound from '../pages/NotFound'
 
 
 const AppRoutes = () => {
@@ -53,6 +54,11 @@ const AppRoutes = () => {
           <Route path="/dashboard" element={<Home />} />  {/* done */}
           <Route path="/league" element={<League />} /> {/* done */}
           <Route path="/matchups" element={<Matchup />} />  {/* done */}
+          <Route path="/team" element={<Home />} />  {/* done */}
+          <Route path="/chat" element={<Home />} />  {/* done */}
+          <Route path="/bets" element={<Home />} />  {/* done */}
+          <Route path="/boss" element={<Home />} />  {/* done */}
+
           <Route path="/players" element={<PlayerWatch />} />  {/* done */}
           <Route path="/player-list-view" element={<PlayerListView />} /> {/* done */}
           <Route path="/player-list-view-second" element={<PlayerListViewSecond />} /> {/* done */}
@@ -87,8 +93,8 @@ const AppRoutes = () => {
           <Route path="/find-league" element={<FindLeague />} />
         </Route>
 
-        {/* Default Route - Redirect to Login */}
-        <Route path="/" element={<Navigate to="/" replace />} />
+        {/* 404 Not Found Route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

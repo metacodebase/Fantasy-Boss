@@ -74,7 +74,7 @@ const ScoresDraft = () => {
   ];
 
   const proposeTradeContent = (
-    <div className="draft-board-wrapper mt-6">
+    <div className="draft-board-wrapper mt-6 overflow-x-auto overflow-y-hidden">
       <Table
         columns={columns}
         dataSource={draftBoardData}
@@ -82,6 +82,7 @@ const ScoresDraft = () => {
         className="draft-board-table"
         bordered={false}
         size="small"
+        style={{minWidth: 600}}
       />
     </div>
   );
@@ -98,9 +99,9 @@ const ScoresDraft = () => {
   ];
 
   const tradingBlockContent = (
-    <div className="budgets-container mt-6">
+    <div className="budgets-container mt-6  overflow-x-auto overflow-y-hidden">
       {budgetData.map((item) => (
-        <div key={item.key} className="budget-row">
+        <div key={item.key} className="budget-row min-w-[600px]">
           {/* Avatar */}
           <div className="flex items-center gap-4">
               <div className="budget-avatar">

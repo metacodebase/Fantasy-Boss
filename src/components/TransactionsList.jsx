@@ -29,11 +29,11 @@ const TransactionsList = () => {
             {group.map((transaction) => (
               <div
                 key={transaction.id}
-                className="flex items-center justify-between"
+                className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:items-center justify-between"
               >
                 <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
                   <div
-                    className={`w-8 h-8 md:w-10 md:h-10 text-lg flex items-center justify-center shrink-0 ${
+                    className={`w-4 h-4 md:w-10 md:h-10 text-lg flex items-center justify-center shrink-0 ${
                       transaction.type === "add"
                         ? "text-[#1DF92B]"
                         : " text-[#FF0000]"
@@ -47,22 +47,22 @@ const TransactionsList = () => {
                       }
                     ></iconify-icon>
                   </div>
-                  <div className="w-[42px] h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-3xl">
+                  <div className="lg:w-[42px] w-8 h-8 lg:h-[42px] bg-[#3B3B3B] rounded-lg flex items-center justify-center shrink-0 text-[#C0A172] text-xl lg:text-3xl">
                     <iconify-icon
                       icon="mdi:account"
                       className=""
                     ></iconify-icon>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-white font-bold text-sm lg:text-base">
+                    <div className="text-white font-bold text-xs lg:text-base">
                       {transaction.name}
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`whitespace-nowrap ml-2 md:ml-4 ${
+                  className={`whitespace-nowrap md:ml-4${
                     transaction.type === "add"
-                      ? "text-white font-medium text-base"
+                      ? "text-white font-medium text-sm lg:text-base"
                       : "text-gray font-medium text-sm"
                   }`}
                 >

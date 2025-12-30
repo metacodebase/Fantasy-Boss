@@ -73,7 +73,7 @@ const Home = () => {
               </button>
                 </div>
 
-           <div className="flex justify-between bg-[#050608] rounded-[10px] p-4 mt-5">
+           <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between bg-[#050608] rounded-[10px] p-4 mt-5">
             <div className="flex lg:items-center gap-4">
               <button className="flex items-center justify-center h-7 min-w-7 rounded-full bg-white text-maindark text-2xl">
                 <iconify-icon icon="ic:baseline-plus"></iconify-icon>
@@ -105,7 +105,7 @@ const Home = () => {
               {currentLeagues.map((league) => (
                 <div
                   key={league.id}
-                  className="flex items-center justify-between gap-4 bg-linear-to-b from-[#2E2E2E] to-[#191818] rounded-xl p-4  transition-all"
+                  className="flex lg:items-center flex-col lg:flex-row justify-between gap-4 bg-linear-to-b from-[#2E2E2E] to-[#191818] rounded-xl p-4  transition-all"
                 >
                   <div className="flex items-center gap-3 flex-1">
                     <div><img src="/assets/images/sheild.png" className="w-10" alt="sheild" /></div>
@@ -172,13 +172,13 @@ const Home = () => {
               <iconify-icon icon="ic:baseline-apple"></iconify-icon>
             </span>
 
-            <div>APP STORE</div>
+            <div className="text-xs lg:text-base">APP STORE</div>
               </button>
               <button className="bg-[#050608] rounded-[10px] px-4 py-2 flex items-center gap-3 w-full">
                        <span className="w-7 h-7 rounded-full text-white bg-[#394962] text-xl flex items-center justify-center">
                     <iconify-icon icon="mage:playstore"></iconify-icon>
             </span>
-      <div>Google play</div>
+      <div className="text-xs lg:text-base">Google play</div>
               </button>
             </div>
 
