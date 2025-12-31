@@ -121,9 +121,9 @@ const Header = () => {
         title={
           <div className="flex items-center gap-3">
             
-            <Link to="/dashboard" className="flex-1">
+            <Link  to="/dashboard" className="flex-1" onClick={() => setDrawerOpen(false)}>
                     <img src="/assets/images/small-logo.png" className="h-10 w-auto" alt="dashboard-logo" />
-          </Link>
+             </Link>
           </div>
         }
         onClose={() => setDrawerOpen(false)}

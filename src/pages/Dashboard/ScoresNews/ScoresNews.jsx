@@ -41,21 +41,21 @@ const ScoresNews = () => {
       key: "pick",
       align: "left",
       width: 100,
-      render: (text) => <span className="text-white lg:text-base font-bold ms-2">{text}</span>,
+      render: (text) => <span className="text-white text-sm lg:text-base font-bold ms-2">{text}</span>,
     },
     {
       title: "Player",
       dataIndex: "player",
       key: "player",
       align: "left",
-      render: (text) => <span className="text-white lg:text-base font-bold">{text}</span>,
+      render: (text) => <span className="text-white text-sm lg:text-base font-bold">{text}</span>,
     },
     {
       title: "Team",
       dataIndex: "team",
       key: "team",
       align: "right",
-      render: (text) => <span className="text-white text-base font-bold">{text}</span>,
+      render: (text) => <span className="text-white text-sm lg:text-base font-bold">{text}</span>,
     },
   ];
 

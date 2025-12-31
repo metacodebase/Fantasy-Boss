@@ -332,6 +332,9 @@ input[type="number"] {
 .ant-switch.custom-switch.ant-switch-checked {
   background-color: var(--color-yellow);
 }
+.ant-switch.custom-switch {
+  height: 24px !important;
+} 
 .ant-switch.custom-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
   background-color: var(--color-yellow);
 }
