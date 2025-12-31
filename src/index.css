@@ -292,6 +292,7 @@ input[type="number"] {
 .ant-select.fantasy-header-select {
   padding: 0px 0px 10px 0px;
   color: var(--color-white);
+  width: 141px;
 }
 .ant-select.fantasy-header-select .ant-select-suffix{
   color: var(--color-white);
